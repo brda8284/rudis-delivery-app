@@ -1,0 +1,19 @@
+Route,Store,City,Product,Item,Predicted Demand,Recommended Qty,4-Week Avg Sold,Return Rate,Confidence,Action,Last Drop Qty,Last Return Qty
+ROUTE 759,17,Englewood,CO RO 100% Bread WW,3149302160,3.2,4,3,0.12,✅ High Confidence,✅ Maintain,4,0
+ROUTE 759,17,Englewood,CO RO Honey Sweet,3149331751,2.1,3,2,0.18,👀 Moderate Confidence,✅ Maintain,3,1
+ROUTE 759,17,Englewood,GF BRIOCHE BURGER BZ,85675000207,1.8,2,2,0.35,⚠️ Low Confidence,🔻 Reduce Drop,4,2
+ROUTE 759,885,Denver,CO RO 100% Bread WW,3149302160,4.1,5,4,0.10,✅ High Confidence,🔺 Increase Drop,4,0
+ROUTE 759,885,Denver,CO RO Honey Sweet,3149331751,3.0,4,3,0.15,✅ High Confidence,✅ Maintain,4,0
+ROUTE 759,885,Denver,CO RO Multigrain Oat,3149382888,2.5,3,3,0.22,👀 Moderate Confidence,✅ Maintain,3,1
+ROUTE 759,885,Denver,GF Super Seed,85675000227,1.5,2,2,0.40,⚠️ Low Confidence,🔻 Reduce Drop,4,2
+ROUTE 759,1038,Denver,CO RO 100% Bread WW,3149302160,5.2,6,5,0.08,✅ High Confidence,🔺 Increase Drop,5,0
+ROUTE 759,1038,Denver,CO RO Honey Sweet,3149331751,3.8,4,4,0.12,✅ High Confidence,✅ Maintain,4,0
+ROUTE 759,1248,Denver,CO RO 100% Bread WW,3149302160,2.9,3,3,0.14,✅ High Confidence,✅ Maintain,3,0
+ROUTE 759,1248,Denver,CO RO Honey Sweet,3149331751,2.1,3,2,0.20,👀 Moderate Confidence,✅ Maintain,3,1
+ROUTE 759,1248,Denver,CO RO THIN 100% WHT,3149354371,1.5,2,2,0.28,👀 Moderate Confidence,🔻 Reduce Drop,3,1
+ROUTE 754,631,Vail,CO RO Country Morn,3149302040,3.5,4,4,0.49,⚠️ Low Confidence,🔻 Reduce Drop,6,3
+ROUTE 754,631,Vail,CO RO Honey Sweet,3149302060,2.8,3,3,0.35,⚠️ Low Confidence,🔻 Reduce Drop,5,2
+ROUTE 754,631,Vail,CO RO Multigrain Oat,3149302100,4.1,5,4,0.25,👀 Moderate Confidence,✅ Maintain,5,1
+ROUTE 754,322,Golden,CO RO 100% Bread WW,3149302160,6.2,7,6,0.10,✅ High Confidence,🔺 Increase Drop,6,0
+ROUTE 754,322,Golden,CO RO Honey Sweet,3149331751,4.5,5,5,0.15,✅ High Confidence,✅ Maintain,5,0
+ROUTE 754,322,Golden,GF BRIOCHE BURGER BZ,85675000207,2.1,3,2,0.38,⚠️ Low Confidence,🔻 Reduce Drop,4,2
