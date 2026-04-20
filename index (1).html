@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Rudi's Routes" />
+  <title>Rudi's Bakery — Route Planner</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f1a;
+      --surface: #1a1a2e;
+      --surface2: #22223b;
+      --border: #2d2d4a;
+      --accent: #e8b84b;
+      --accent2: #f4d03f;
+      --text: #f0f0f5;
+      --text-muted: #8888aa;
+      --green: #2ecc71;
+      --orange: #f39c12;
+      --red: #e74c3c;
+      --blue: #3498db;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--accent);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .header h1 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--text);
+    }
+
+    .header h1 span {
+      color: var(--accent);
+    }
+
+    .date-badge {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ── MAIN CONTAINER ── */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+    /* ── ROUTE SELECTOR ── */
+    .route-section {
+      margin-bottom: 24px;
+    }
+
+    .section-label {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .route-select {
+      width: 100%;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 14px 16px;
+      appearance: none;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .route-select:focus {
+      border-color: var(--accent);
+    }
+
+    /* ── SUMMARY CARDS ── */
+    .summary-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .summary-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 10px 14px;
+      text-align: center;
+    }
+
+    .summary-card .card-icon {
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .summary-card .card-value {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .summary-card .card-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    /* ── STORE CARDS ── */
+    .store-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .store-card:active {
+      border-color: var(--accent);
+    }
+
+    .store-header {
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .store-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .store-number {
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      min-width: 44px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .store-info h3 {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .store-info p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .store-header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .total-units {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .total-units span {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .chevron {
+      color: var(--text-muted);
+      font-size: 16px;
+      transition: transform 0.2s;
+    }
+
+    .store-card.open .chevron {
+      transform: rotate(180deg);
+    }
+
+    /* ── PRODUCT ROWS ── */
+    .product-list {
+      display: none;
+      border-top: 1px solid var(--border);
+    }
+
+    .store-card.open .product-list {
+      display: block;
+    }
+
+    .product-row {
+      padding: 12px 16px 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      border-left: 3px solid transparent;
+    }
+
+    .product-row:last-child {
+      border-bottom: none;
+    }
+
+    .product-row.stripe-reduce   { border-left-color: var(--red); }
+    .product-row.stripe-increase { border-left-color: var(--blue); }
+    .product-row.stripe-maintain { border-left-color: var(--green); }
+
+    /* hide the old dot — kept in markup for legend, just shrink */
+    .action-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: none;
+    }
+
+    .product-left {
+      flex: 1;
+    }
+
+    .product-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .product-upc {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      font-family: monospace;
+    }
+
+    .product-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .confidence-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 7px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .confidence-high {
+      background: rgba(46, 204, 113, 0.15);
+      color: var(--green);
+      border: 1px solid rgba(46, 204, 113, 0.3);
+    }
+
+    .confidence-medium {
+      background: rgba(243, 156, 18, 0.15);
+      color: var(--orange);
+      border: 1px solid rgba(243, 156, 18, 0.3);
+    }
+
+    .confidence-low {
+      background: rgba(231, 76, 60, 0.15);
+      color: var(--red);
+      border: 1px solid rgba(231, 76, 60, 0.3);
+    }
+
+    .qty-bubble {
+      background: var(--accent);
+      color: #0f0f1a;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .action-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .action-reduce { background: var(--red); }
+    .action-maintain { background: var(--green); }
+    .action-increase { background: var(--blue); }
+
+    /* ── LOADING / EMPTY STATES ── */
+    .state-box {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+
+    .state-box .state-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .state-box h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .state-box p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── LEGEND ── */
+    .legend {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 24px;
+    }
+
+    .legend-title {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── SEARCH ── */
+    .search-box {
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      padding: 12px 16px;
+      width: 100%;
+      outline: none;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent);
+    }
+
+    .search-box::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* ── INSTALL BANNER ── */
+    .install-banner {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+      color: #0f0f1a;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .install-banner-text {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .install-banner-sub {
+      font-size: 12px;
+      opacity: 0.8;
+      margin-top: 2px;
+    }
+
+    .install-btn {
+      background: #0f0f1a;
+      color: var(--accent);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* ── DATE PICKER ── */
+    .date-section {
+      margin-bottom: 20px;
+    }
+
+    .date-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .date-pills::-webkit-scrollbar { display: none; }
+
+    .date-pill {
+      flex-shrink: 0;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+      min-width: 72px;
+    }
+
+    .date-pill:active { background: var(--surface); }
+
+    .date-pill.selected {
+      border-color: var(--accent);
+      background: rgba(232, 184, 75, 0.12);
+    }
+
+    .date-pill .pill-day {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .date-pill.selected .pill-day { color: var(--accent); }
+
+    .date-pill .pill-date {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.1;
+      margin-top: 2px;
+    }
+
+    .date-pill.selected .pill-date { color: var(--accent); }
+
+    .date-pill .pill-month {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer strong {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">
+    <div class="logo-icon">🍞</div>
+    <h1>Rudi's <span>Routes</span></h1>
+  </div>
+  <div class="date-badge" id="today-date"></div>
+</div>
+
+<div class="container">
+
+  <div id="install-banner" class="install-banner" style="display:none" onclick="installApp()">
+    <div>
+      <div class="install-banner-text">Add to Home Screen</div>
+      <div class="install-banner-sub">Quick access from your phone</div>
+    </div>
+    <button class="install-btn">Install</button>
+  </div>
+
+  <div class="route-section">
+    <div class="section-label">Select Your Route</div>
+    <select class="route-select" id="route-select" onchange="filterRoute()">
+      <option value="">— Choose a route —</option>
+    </select>
+  </div>
+
+  <div id="date-section" class="date-section" style="display:none">
+    <div class="section-label">Delivery Date</div>
+    <div class="date-pills" id="date-pills"></div>
+  </div>
+
+  <div id="legend" class="legend" style="display:none">
+    <div class="legend-title">Guide</div>
+    <div class="legend-items">
+      <div class="legend-item"><div class="action-dot action-maintain"></div> Maintain drop</div>
+      <div class="legend-item"><div class="action-dot action-reduce"></div> Reduce drop</div>
+      <div class="legend-item"><div class="action-dot action-increase"></div> Increase drop</div>
+      <div class="legend-item"><span class="confidence-badge confidence-high">High</span> Confident</div>
+      <div class="legend-item"><span class="confidence-badge confidence-low">Low</span> Use judgment</div>
+    </div>
+  </div>
+
+  <div id="summary-cards" class="summary-cards" style="display:none">
+    <div class="summary-card">
+      <div class="card-icon">🏪</div>
+      <div class="card-value" id="card-stores">—</div>
+      <div class="card-label">Stops</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-icon">📋</div>
+      <div class="card-value" id="card-skus">—</div>
+      <div class="card-label">SKUs</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-icon">📦</div>
+      <div class="card-value" id="card-units">—</div>
+      <div class="card-label">Total Units</div>
+    </div>
+  </div>
+
+  <input type="search" class="search-box" id="search-box" placeholder="Search store or product..." oninput="renderStores()" style="display:none" />
+
+  <div id="store-list"></div>
+
+  <div class="footer">
+    Powered by <strong>Rudi's Bakery</strong> Route Optimization Model<br>
+    Updated weekly — last update: <span id="last-update">—</span>
+  </div>
+
+</div>
+
+<script>
+// ── CONFIG ──────────────────────────────────────────────────
+// Point this to your raw CSV on GitHub after upload
+const CSV_URL = 'recommendations.csv';
+
+// Product name lookup (UPC -> readable name)
+// This gets populated from the CSV descrip column if available
+const PRODUCT_NAMES = {};
+
+// ── STATE ────────────────────────────────────────────────────
+let allData = [];
+let selectedRoute = '';
+let selectedDate = '';
+
+// ── INIT ─────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  setDate();
+  loadData();
+  setupInstallPrompt();
+});
+
+function setDate() {
+  const now = new Date();
+  const opts = { weekday: 'short', month: 'short', day: 'numeric' };
+  document.getElementById('today-date').textContent = now.toLocaleDateString('en-US', opts).toUpperCase();
+  document.getElementById('last-update').textContent = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// ── LOAD CSV ─────────────────────────────────────────────────
+async function loadData() {
+  const list = document.getElementById('store-list');
+  list.innerHTML = `
+    <div class="state-box">
+      <div class="state-icon">⏳</div>
+      <h3>Loading recommendations...</h3>
+      <p>Fetching the latest delivery data</p>
+    </div>`;
+
+  try {
+    const res = await fetch(CSV_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('CSV not found');
+    const text = await res.text();
+    allData = parseCSV(text);
+
+    if (allData.length === 0) throw new Error('No data');
+
+    populateRoutes();
+    list.innerHTML = `
+      <div class="state-box">
+        <div class="state-icon">👆</div>
+        <h3>Select your route above</h3>
+        <p>${allData.length} recommendations loaded across ${[...new Set(allData.map(r => r.route))].length} routes</p>
+      </div>`;
+  } catch (e) {
+    list.innerHTML = `
+      <div class="state-box">
+        <div class="state-icon">⚠️</div>
+        <h3>Could not load data</h3>
+        <p>Make sure recommendations.csv is uploaded to the repository.<br><br>Error: ${e.message}</p>
+      </div>`;
+  }
+}
+
+// ── PARSE CSV ────────────────────────────────────────────────
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+  
+  return lines.slice(1).map(line => {
+    const vals = line.split(',').map(v => v.trim().replace(/"/g, ''));
+    const row = {};
+    headers.forEach((h, i) => row[h] = vals[i] || '');
+    return row;
+  }).filter(r => r.route || r.Route);
+}
+
+// ── POPULATE ROUTES ──────────────────────────────────────────
+function populateRoutes() {
+  const sel = document.getElementById('route-select');
+  
+  // Handle both capitalized and lowercase column names
+  const routeKey = allData[0].hasOwnProperty('Route') ? 'Route' : 'route';
+  const routes = [...new Set(allData.map(r => r[routeKey]))].sort();
+  
+  routes.forEach(r => {
+    const opt = document.createElement('option');
+    opt.value = r;
+    opt.textContent = r;
+    sel.appendChild(opt);
+  });
+}
+
+// ── FILTER BY ROUTE ──────────────────────────────────────────
+function filterRoute() {
+  selectedRoute = document.getElementById('route-select').value;
+  selectedDate = '';
+
+  const dateSection = document.getElementById('date-section');
+  const summaryCards = document.getElementById('summary-cards');
+  const legend = document.getElementById('legend');
+  const searchBox = document.getElementById('search-box');
+
+  if (!selectedRoute) {
+    dateSection.style.display = 'none';
+    summaryCards.style.display = 'none';
+    legend.style.display = 'none';
+    searchBox.style.display = 'none';
+    document.getElementById('store-list').innerHTML = `
+      <div class="state-box">
+        <div class="state-icon">👆</div>
+        <h3>Select your route above</h3>
+      </div>`;
+    return;
+  }
+
+  // Build date pills for this route
+  const routeKey = allData[0].hasOwnProperty('Route') ? 'Route' : 'route';
+  const dateKey  = allData[0].hasOwnProperty('SpecificDate') ? 'SpecificDate' : null;
+
+  if (dateKey) {
+    const routeRows = allData.filter(r => String(r[routeKey]) === String(selectedRoute));
+    const dates = [...new Set(routeRows.map(r => r[dateKey]))].filter(Boolean).sort();
+
+    const pillsEl = document.getElementById('date-pills');
+    pillsEl.innerHTML = dates.map(d => {
+      const dt = new Date(d + 'T00:00:00');
+      const dayName = dt.toLocaleDateString('en-US', { weekday: 'short' });
+      const dayNum  = dt.getDate();
+      const mon     = dt.toLocaleDateString('en-US', { month: 'short' });
+      return `<div class="date-pill" data-date="${d}" onclick="selectDate('${d}')">
+        <div class="pill-day">${dayName}</div>
+        <div class="pill-date">${dayNum}</div>
+        <div class="pill-month">${mon}</div>
+      </div>`;
+    }).join('');
+
+    dateSection.style.display = 'block';
+
+    // Auto-select the closest upcoming date (or last if all past)
+    const today = new Date().toISOString().slice(0, 10);
+    const upcoming = dates.find(d => d >= today) || dates[dates.length - 1];
+    if (upcoming) selectDate(upcoming);
+  } else {
+    dateSection.style.display = 'none';
+    summaryCards.style.display = 'grid';
+    legend.style.display = 'block';
+    searchBox.style.display = 'block';
+    searchBox.value = '';
+    renderStores();
+  }
+}
+
+function selectDate(date) {
+  selectedDate = date;
+  document.querySelectorAll('.date-pill').forEach(p => {
+    p.classList.toggle('selected', p.dataset.date === date);
+  });
+  document.getElementById('summary-cards').style.display = 'grid';
+  document.getElementById('legend').style.display = 'block';
+  document.getElementById('search-box').style.display = 'block';
+  document.getElementById('search-box').value = '';
+  renderStores();
+}
+
+// ── RENDER STORES ────────────────────────────────────────────
+function renderStores() {
+  const firstRow = allData[0];
+  const routeKey      = 'Route'      in firstRow ? 'Route'          : 'route';
+  const storeKey      = 'Store'      in firstRow ? 'Store'          : 'store';
+  const cityKey       = 'City'       in firstRow ? 'City'           : ('SHIPCITY' in firstRow ? 'SHIPCITY' : '');
+  const productKey    = 'Product'    in firstRow ? 'Product'        : ('descrip' in firstRow ? 'descrip' : 'product');
+  // Support both CSV schemas: new (RecommendedDrop) and old (Recommended Qty)
+  const qtyKey        = 'RecommendedDrop' in firstRow ? 'RecommendedDrop'
+                      : ('Recommended Qty' in firstRow ? 'Recommended Qty' : 'optimal_units');
+  const demandKey     = 'PredictedDemand' in firstRow ? 'PredictedDemand'
+                      : ('Predicted Demand' in firstRow ? 'Predicted Demand' : 'pred_demand');
+  const skuKey        = 'ItemCode'   in firstRow ? 'ItemCode'       : ('Item' in firstRow ? 'Item' : null);
+  const skuTierKey    = 'SKUTier'    in firstRow ? 'SKUTier'        : null;
+  const riskKey       = 'RiskFlag'   in firstRow ? 'RiskFlag'       : null;
+  const confidenceKey = 'Confidence' in firstRow ? 'Confidence'     : null;
+  const actionKey     = 'ChangeFromCurrent' in firstRow ? 'ChangeFromCurrent'
+                      : ('Action' in firstRow ? 'Action' : null);
+  const returnRateKey = 'Return Rate' in firstRow ? 'Return Rate'   : null;
+
+  const searchTerm = document.getElementById('search-box').value.toLowerCase();
+  const dateKey = 'SpecificDate' in firstRow ? 'SpecificDate' : null;
+  
+  let filtered = allData.filter(r => String(r[routeKey]) === String(selectedRoute));
+
+  // Filter by selected date if we have date data
+  if (dateKey && selectedDate) {
+    filtered = filtered.filter(r => r[dateKey] === selectedDate);
+  }
+  
+  if (searchTerm) {
+    filtered = filtered.filter(r =>
+      String(r[storeKey]).toLowerCase().includes(searchTerm) ||
+      String(r[productKey] || r.product || '').toLowerCase().includes(searchTerm) ||
+      String(r[cityKey] || '').toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // Group by store
+  const stores = {};
+  filtered.forEach(r => {
+    const sid = r[storeKey];
+    if (!stores[sid]) stores[sid] = { info: r, products: [] };
+    stores[sid].products.push(r);
+  });
+
+  // Summary cards
+  const totalUnits = filtered.reduce((sum, r) => sum + (parseFloat(r[qtyKey]) || 0), 0);
+  document.getElementById('card-stores').textContent = Object.keys(stores).length;
+  document.getElementById('card-skus').textContent = filtered.length;
+  document.getElementById('card-units').textContent = Math.round(totalUnits);
+
+  // Render
+  const list = document.getElementById('store-list');
+  if (Object.keys(stores).length === 0) {
+    list.innerHTML = `<div class="state-box"><div class="state-icon">🔍</div><h3>No results</h3><p>Try a different search term</p></div>`;
+    return;
+  }
+
+  list.innerHTML = Object.entries(stores).map(([storeId, data]) => {
+    const storeTotal = data.products.reduce((sum, r) => sum + (parseFloat(r[qtyKey]) || 0), 0);
+    const city = data.info[cityKey] || '';
+    // Sanitize the store name into a valid DOM id (replace non-alphanumeric with underscores)
+    const safeId = 'store-' + String(storeId).replace(/[^a-zA-Z0-9]/g, '_');
+
+    const productRows = data.products.map(r => {
+      const qty = Math.round(parseFloat(r[qtyKey]) || 0);
+      const productName = r[productKey] || 'Unknown Product';
+      const skuDisplay = skuKey ? r[skuKey] : '';
+      
+      // Confidence: prefer explicit Confidence col, then SKUTier, then return rate
+      let confClass = 'confidence-high';
+      let confLabel = 'High';
+      if (confidenceKey && r[confidenceKey]) {
+        const c = r[confidenceKey].toLowerCase();
+        if (c.includes('low')) { confClass = 'confidence-low'; confLabel = 'Low'; }
+        else if (c.includes('moderate') || c.includes('medium')) { confClass = 'confidence-medium'; confLabel = 'Med'; }
+      } else if (skuTierKey && r[skuTierKey]) {
+        const t = r[skuTierKey].toLowerCase();
+        if (t === 'weak') { confClass = 'confidence-low'; confLabel = 'Low'; }
+        else if (t === 'moderate') { confClass = 'confidence-medium'; confLabel = 'Med'; }
+      } else if (returnRateKey && r[returnRateKey]) {
+        const rate = parseFloat(r[returnRateKey]);
+        if (rate > 0.30) { confClass = 'confidence-low'; confLabel = 'Low'; }
+        else if (rate > 0.20) { confClass = 'confidence-medium'; confLabel = 'Med'; }
+      }
+
+      // Action: support numeric ChangeFromCurrent or text Action column
+      let actionClass = 'action-maintain';
+      if (actionKey && r[actionKey] !== undefined && r[actionKey] !== '') {
+        const raw = r[actionKey];
+        const numeric = parseFloat(raw);
+        if (!isNaN(numeric)) {
+          if (numeric < 0) actionClass = 'action-reduce';
+          else if (numeric > 0) actionClass = 'action-increase';
+        } else {
+          const a = String(raw).toLowerCase();
+          if (a.includes('reduce') || a.includes('decrease')) actionClass = 'action-reduce';
+          else if (a.includes('increase')) actionClass = 'action-increase';
+        }
+      }
+
+      // Risk flag badge (new schema only)
+      const riskBadge = riskKey && r[riskKey] && r[riskKey] !== 'OK'
+        ? `<span class="confidence-badge confidence-medium" style="margin-right:4px">${r[riskKey]}</span>`
+        : '';
+
+      return `
+        <div class="product-row stripe-${actionClass.replace('action-', '')}">
+          <div class="product-left">
+            <div class="product-name">${productName}</div>
+            ${skuDisplay ? `<div class="product-upc">SKU ${skuDisplay}</div>` : ''}
+          </div>
+          <div class="product-right">
+            ${riskBadge}<span class="confidence-badge ${confClass}">${confLabel}</span>
+            <div class="qty-bubble">${qty}</div>
+            <div class="action-dot ${actionClass}"></div>
+          </div>
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="store-card" id="${safeId}">
+        <div class="store-header" onclick="toggleStore('${safeId}')">
+          <div class="store-header-left">
+            <div class="store-number">#${storeId}</div>
+            <div class="store-info">
+              <h3>${storeId}</h3>
+              ${city ? `<p>${city}</p>` : ''}
+            </div>
+          </div>
+          <div class="store-header-right">
+            <div class="total-units">${Math.round(storeTotal)}<span> units</span></div>
+            <div class="chevron">▼</div>
+          </div>
+        </div>
+        <div class="product-list">${productRows}</div>
+      </div>`;
+  }).join('');
+}
+
+// ── TOGGLE STORE ─────────────────────────────────────────────
+function toggleStore(id) {
+  const card = document.getElementById(id);
+  card.classList.toggle('open');
+}
+
+// ── PWA INSTALL ──────────────────────────────────────────────
+let deferredPrompt;
+
+function setupInstallPrompt() {
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('install-banner').style.display = 'flex';
+  });
+}
+
+function installApp() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+      document.getElementById('install-banner').style.display = 'none';
+    });
+  }
+}
+</script>
+</body>
+</html>
