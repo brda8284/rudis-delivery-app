@@ -1,19 +1,1493 @@
-Route,Store,City,Product,Item,Predicted Demand,Recommended Qty,4-Week Avg Sold,Return Rate,Confidence,Action,Last Drop Qty,Last Return Qty
-ROUTE 759,17,Englewood,CO RO 100% Bread WW,3149302160,3.2,4,3,0.12,✅ High Confidence,✅ Maintain,4,0
-ROUTE 759,17,Englewood,CO RO Honey Sweet,3149331751,2.1,3,2,0.18,👀 Moderate Confidence,✅ Maintain,3,1
-ROUTE 759,17,Englewood,GF BRIOCHE BURGER BZ,85675000207,1.8,2,2,0.35,⚠️ Low Confidence,🔻 Reduce Drop,4,2
-ROUTE 759,885,Denver,CO RO 100% Bread WW,3149302160,4.1,5,4,0.10,✅ High Confidence,🔺 Increase Drop,4,0
-ROUTE 759,885,Denver,CO RO Honey Sweet,3149331751,3.0,4,3,0.15,✅ High Confidence,✅ Maintain,4,0
-ROUTE 759,885,Denver,CO RO Multigrain Oat,3149382888,2.5,3,3,0.22,👀 Moderate Confidence,✅ Maintain,3,1
-ROUTE 759,885,Denver,GF Super Seed,85675000227,1.5,2,2,0.40,⚠️ Low Confidence,🔻 Reduce Drop,4,2
-ROUTE 759,1038,Denver,CO RO 100% Bread WW,3149302160,5.2,6,5,0.08,✅ High Confidence,🔺 Increase Drop,5,0
-ROUTE 759,1038,Denver,CO RO Honey Sweet,3149331751,3.8,4,4,0.12,✅ High Confidence,✅ Maintain,4,0
-ROUTE 759,1248,Denver,CO RO 100% Bread WW,3149302160,2.9,3,3,0.14,✅ High Confidence,✅ Maintain,3,0
-ROUTE 759,1248,Denver,CO RO Honey Sweet,3149331751,2.1,3,2,0.20,👀 Moderate Confidence,✅ Maintain,3,1
-ROUTE 759,1248,Denver,CO RO THIN 100% WHT,3149354371,1.5,2,2,0.28,👀 Moderate Confidence,🔻 Reduce Drop,3,1
-ROUTE 754,631,Vail,CO RO Country Morn,3149302040,3.5,4,4,0.49,⚠️ Low Confidence,🔻 Reduce Drop,6,3
-ROUTE 754,631,Vail,CO RO Honey Sweet,3149302060,2.8,3,3,0.35,⚠️ Low Confidence,🔻 Reduce Drop,5,2
-ROUTE 754,631,Vail,CO RO Multigrain Oat,3149302100,4.1,5,4,0.25,👀 Moderate Confidence,✅ Maintain,5,1
-ROUTE 754,322,Golden,CO RO 100% Bread WW,3149302160,6.2,7,6,0.10,✅ High Confidence,🔺 Increase Drop,6,0
-ROUTE 754,322,Golden,CO RO Honey Sweet,3149331751,4.5,5,5,0.15,✅ High Confidence,✅ Maintain,5,0
-ROUTE 754,322,Golden,GF BRIOCHE BURGER BZ,85675000207,2.1,3,2,0.38,⚠️ Low Confidence,🔻 Reduce Drop,4,2
+SpecificDate,Route,DeliveryDay,Store,City,MilesFromBoulder,ItemCode,Product,PredictedDemand,RecommendedDrop,CurrentDrop,SKUTier,RiskFlag,ShelfCap,ChangeFromCurrent
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9530,CO GF Briouche Loaf ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2160,CO RO 100% Bread WW,1.0,1,0,STRONG,OK,5.0,1
+2025-12-29,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9500,CO RO GF HOME ORIGI,2.0,2,0,STRONG,OK,4.0,2
+2025-12-29,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9500,CO RO GF HOME ORIGI ,4.0,4,3,STRONG,OK,4.0,1
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9450,CO RO GF SOURDOUGH,4.0,4,1,STRONG,OK,4.0,3
+2025-12-29,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9450,CO RO GF SOURDOUGH  ,3.0,3,3,STRONG,OK,4.0,0
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9602,CO RO GF Super Seed,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9602,CO RO GF Super Seed ,2.0,2,2,STRONG,OK,4.0,0
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2060,CO RO Honey Sweet,2.0,2,1,STRONG,OK,5.0,1
+2025-12-29,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2120,CO RO Rocky Mt Sour,9.0,5,0,STRONG,OK,5.0,5
+2025-12-31,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,2120,CO RO Rocky Mt Sour ,5.0,5,10,STRONG,OK,5.0,-5
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,4120,CO RO THIN RM SOUR,3.0,1,0,STRONG,OK,4.0,1
+2025-12-31,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,4120,CO RO THIN RM SOUR  ,3.0,1,5,STRONG,OK,4.0,-4
+2026-03-30,751,Monday,Safeway *SBT #2722 - Littleton,Littleton,32,9531,GF BRIOCHE BURGER BZ,2.0,2,0,MODERATE,WATCH,4.0,2
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2160,CO RO 100% Bread WW,2.0,2,1,STRONG,OK,5.0,1
+2025-12-29,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2160,CO RO 100% Bread WW ,1.0,1,1,STRONG,OK,5.0,0
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2040,CO RO Country Morn,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-31,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2025-12-29,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9602,CO RO GF Super Seed,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9602,CO RO GF Super Seed ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-23,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-31,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2120,CO RO Rocky Mt Sour,7.0,5,1,STRONG,OK,5.0,4
+2025-12-31,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,2120,CO RO Rocky Mt Sour ,4.0,4,4,STRONG,OK,5.0,0
+2026-03-30,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,4120,CO RO THIN RM SOUR  ,4.0,2,2,STRONG,OK,4.0,0
+2026-03-16,751,Monday,Safeway *SBT on`s #0839 - S.Ki,Littleton,32,9531,GF BRIOCHE BURGER BZ,2.0,2,0,MODERATE,WATCH,4.0,2
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,9530,CO GF Briouche Loaf ,1.0,1,5,STRONG,OK,4.0,-4
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2160,CO RO 100% Bread WW ,1.0,1,4,STRONG,OK,5.0,-3
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,9500,CO RO GF HOME ORIGI ,1.0,1,6,STRONG,OK,4.0,-5
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,9450,CO RO GF SOURDOUGH  ,1.0,1,6,STRONG,OK,4.0,-5
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,9602,CO RO GF Super Seed ,1.0,1,6,MODERATE,WATCH,4.0,-5
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2060,CO RO Honey Sweet   ,3.0,3,2,MODERATE,WATCH,5.0,1
+2025-12-29,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,2120,CO RO Rocky Mt Sour ,4.0,3,3,STRONG,OK,5.0,0
+2025-12-31,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,4120,CO RO THIN RM SOUR  ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-29,751,Wednesday,Safeway *SBT  #2791-Broadway &,Littleton,32,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2160,CO RO 100% Bread WW,2.0,2,3,STRONG,OK,5.0,-1
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2352,CO RO Crckd Wht Sour,3.0,3,3,MODERATE,WATCH,5.0,0
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,9500,CO RO GF HOME ORIGI,3.0,3,3,STRONG,OK,4.0,0
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,9450,CO RO GF SOURDOUGH,1.0,1,5,STRONG,OK,4.0,-4
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,9602,CO RO GF Super Seed,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2060,CO RO Honey Sweet,3.0,3,2,STRONG,OK,5.0,1
+2026-03-23,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,2120,CO RO Rocky Mt Sour,3.0,2,8,STRONG,OK,5.0,-6
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-30,751,Wednesday,Safeway *SBT #2791-Broadway &,Littleton,32,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-29,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,9530,CO GF Briouche Loaf ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-29,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,9602,CO RO GF Super Seed ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2060,CO RO Honey Sweet   ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,2120,CO RO Rocky Mt Sour ,4.0,4,1,STRONG,OK,5.0,3
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,752,Monday,Safeway *SBT  #1446-Parker,Parker,40,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2160,CO RO 100% Bread WW,3.0,3,1,STRONG,OK,5.0,2
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-13,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-24,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9502,CO RO GF HOME MULTI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-20,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9450,CO RO GF SOURDOUGH,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2060,CO RO Honey Sweet,3.0,3,1,STRONG,OK,5.0,2
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,2120,CO RO Rocky Mt Sour,9.0,5,4,STRONG,OK,5.0,1
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,752,Monday,Safeway *SBT #1446-Parker,Parker,40,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-27,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,9530,CO GF Briouche Loaf ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,9500,CO RO GF HOME ORIGI ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,9450,CO RO GF SOURDOUGH  ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,2100,CO RO Multigrain Oat,3.0,3,1,MODERATE,WATCH,5.0,2
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,2120,CO RO Rocky Mt Sour ,7.0,5,8,STRONG,OK,5.0,-3
+2025-12-30,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,4120,CO RO THIN RM SOUR  ,2.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,752,Wednesday,Safeway *SBT  #1480-S. Broadwa,Highlands Ranch,30,9531,GF BRIOCHE BURGER BZ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2025-12-27,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,9530,CO GF Briouche Loaf ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-24,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2040,CO RO Country Morn  ,2.0,2,4,MODERATE,WATCH,5.0,-2
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,9450,CO RO GF SOURDOUGH  ,2.0,2,6,STRONG,OK,4.0,-4
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-27,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,2120,CO RO Rocky Mt Sour ,7.0,5,8,STRONG,OK,5.0,-3
+2025-12-30,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,4120,CO RO THIN RM SOUR  ,2.0,1,6,STRONG,OK,4.0,-5
+2025-12-24,752,Wednesday,Safeway *SBT  #1548-E. Lincoln,Lonetree,30,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-23,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,9450,CO RO GF SOURDOUGH,3.0,3,3,STRONG,OK,4.0,0
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,2120,CO RO Rocky Mt Sour,6.0,5,4,STRONG,OK,5.0,1
+2026-03-30,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,4120,CO RO THIN RM SOUR,5.0,1,3,STRONG,OK,4.0,-2
+2026-03-26,752,Wednesday,Safeway *SBT #1480-S. Broadwa,Highlands Ranch,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9530,CO GF Briouche Loaf,4.0,4,0,STRONG,OK,4.0,4
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2160,CO RO 100% Bread WW,1.0,1,0,STRONG,OK,5.0,1
+2026-03-26,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-23,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9502,CO RO GF HOME MULTI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9450,CO RO GF SOURDOUGH,4.0,4,0,STRONG,OK,4.0,4
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9602,CO RO GF Super Seed,4.0,4,0,STRONG,OK,4.0,4
+2026-03-31,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2060,CO RO Honey Sweet,1.0,1,1,STRONG,OK,5.0,0
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,2120,CO RO Rocky Mt Sour,2.0,2,6,STRONG,OK,5.0,-4
+2026-03-31,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,4120,CO RO THIN RM SOUR,2.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,752,Wednesday,Safeway *SBT #1548-E. Lincoln,Lonetree,30,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,9530,CO GF Briouche Loaf ,2.0,2,3,STRONG,OK,4.0,-1
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,2160,CO RO 100% Bread WW ,1.0,1,4,STRONG,OK,5.0,-3
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,2040,CO RO Country Morn  ,3.0,3,1,MODERATE,WATCH,5.0,2
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,9500,CO RO GF HOME ORIGI ,3.0,3,3,STRONG,OK,4.0,0
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,9450,CO RO GF SOURDOUGH  ,5.0,4,3,STRONG,OK,4.0,1
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,9602,CO RO GF Super Seed ,2.0,2,3,STRONG,OK,4.0,-1
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,2060,CO RO Honey Sweet   ,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,2100,CO RO Multigrain Oat,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,2120,CO RO Rocky Mt Sour ,5.0,5,9,STRONG,OK,5.0,-4
+2025-12-30,753,Monday,Safeway *SBT  #2612-Aurora,Aurora,35,4120,CO RO THIN RM SOUR  ,5.0,1,10,STRONG,OK,4.0,-9
+2026-03-27,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,9530,CO GF Briouche Loaf,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2160,CO RO 100% Bread WW,3.0,3,2,STRONG,OK,5.0,1
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2040,CO RO Country Morn,3.0,3,1,MODERATE,WATCH,5.0,2
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-27,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,9450,CO RO GF SOURDOUGH,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-24,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,9602,CO RO GF Super Seed,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2060,CO RO Honey Sweet,4.0,4,0,STRONG,OK,5.0,4
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-27,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,2120,CO RO Rocky Mt Sour,3.0,3,6,STRONG,OK,5.0,-3
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,4120,CO RO THIN RM SOUR,3.0,1,0,STRONG,OK,4.0,1
+2026-03-31,753,Monday,Safeway *SBT #2612-Aurora,Aurora,35,9531,GF BRIOCHE BURGER BZ,1.0,1,5,MODERATE,WATCH,4.0,-4
+2026-03-24,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9530,CO GF Briouche Loaf,3.0,3,5,STRONG,OK,4.0,-2
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9530,CO GF Briouche Loaf ,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2160,CO RO 100% Bread WW ,6.0,5,6,STRONG,OK,5.0,-1
+2026-03-20,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-24,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9500,CO RO GF HOME ORIGI,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9500,CO RO GF HOME ORIGI ,5.0,4,3,STRONG,OK,4.0,1
+2026-03-24,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9450,CO RO GF SOURDOUGH,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9450,CO RO GF SOURDOUGH  ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-24,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9602,CO RO GF Super Seed,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-24,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2060,CO RO Honey Sweet,2.0,2,4,MODERATE,WATCH,5.0,-2
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2060,CO RO Honey Sweet   ,5.0,5,2,MODERATE,WATCH,5.0,3
+2026-03-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2120,CO RO Rocky Mt Sour,3.0,3,6,STRONG,OK,5.0,-3
+2025-12-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,2120,CO RO Rocky Mt Sour ,2.0,2,0,STRONG,OK,5.0,2
+2026-03-31,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,4120,CO RO THIN RM SOUR  ,4.0,1,3,STRONG,OK,4.0,-2
+2026-03-03,753,Monday,Safeway *SBT on`s #0841-S.Buck,Aurora,35,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,9530,CO GF Briouche Loaf ,4.0,4,4,STRONG,OK,4.0,0
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2160,CO RO 100% Bread WW ,6.0,5,2,STRONG,OK,5.0,3
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2040,CO RO Country Morn  ,5.0,5,5,MODERATE,WATCH,5.0,0
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2352,CO RO Crckd Wht Sour,2.0,2,4,MODERATE,WATCH,5.0,-2
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,9500,CO RO GF HOME ORIGI ,5.0,4,4,STRONG,OK,4.0,0
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,9450,CO RO GF SOURDOUGH  ,8.0,4,4,STRONG,OK,4.0,0
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,9602,CO RO GF Super Seed ,2.0,2,4,MODERATE,WATCH,4.0,-2
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2060,CO RO Honey Sweet   ,4.0,4,0,STRONG,OK,5.0,4
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2100,CO RO Multigrain Oat,2.0,2,4,MODERATE,WATCH,5.0,-2
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,2120,CO RO Rocky Mt Sour ,8.0,5,12,STRONG,OK,5.0,-7
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,4120,CO RO THIN RM SOUR  ,12.0,4,10,STRONG,OK,4.0,-6
+2025-12-29,753,Monday,Safeway *SBT  #2714-E. 14th,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,4,MODERATE,WATCH,4.0,-3
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9530,CO GF Briouche Loaf,5.0,4,7,STRONG,OK,4.0,-3
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2160,CO RO 100% Bread WW,5.0,5,2,STRONG,OK,5.0,3
+2026-03-20,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2040,CO RO Country Morn,4.0,4,6,MODERATE,WATCH,5.0,-2
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9500,CO RO GF HOME ORIGI,6.0,4,6,STRONG,OK,4.0,-2
+2025-12-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9500,CO RO GF HOME ORIGI ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9450,CO RO GF SOURDOUGH,5.0,4,12,STRONG,OK,4.0,-8
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9602,CO RO GF Super Seed,4.0,4,8,MODERATE,WATCH,4.0,-4
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2060,CO RO Honey Sweet,5.0,5,5,MODERATE,WATCH,5.0,0
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2100,CO RO Multigrain Oat,5.0,5,8,MODERATE,WATCH,5.0,-3
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,2120,CO RO Rocky Mt Sour,18.0,5,20,STRONG,OK,5.0,-15
+2026-03-24,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,4120,CO RO THIN RM SOUR,5.0,1,13,STRONG,OK,4.0,-12
+2026-03-06,753,Monday,Safeway *SBT ons #3836-200 Que,Denver,28,9531,GF BRIOCHE BURGER BZ,3.0,3,0,MODERATE,WATCH,4.0,3
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,9530,CO GF Briouche Loaf,1.0,1,5,STRONG,OK,4.0,-4
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2160,CO RO 100% Bread WW,3.0,3,2,STRONG,OK,5.0,1
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2352,CO RO Crckd Wht Sour,2.0,2,0,MODERATE,WATCH,5.0,2
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,9500,CO RO GF HOME ORIGI,4.0,4,4,STRONG,OK,4.0,0
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,9450,CO RO GF SOURDOUGH,1.0,1,6,STRONG,OK,4.0,-5
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,9602,CO RO GF Super Seed,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-23,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,2120,CO RO Rocky Mt Sour,7.0,5,0,STRONG,OK,5.0,5
+2026-03-30,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,4120,CO RO THIN RM SOUR,3.0,1,8,STRONG,OK,4.0,-7
+2026-03-02,753,Wednesday,Safeway *SBT #2714-E. 14th,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2040,CO RO Country Morn,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9500,CO RO GF HOME ORIGI,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9602,CO RO GF Super Seed,5.0,4,1,STRONG,OK,4.0,3
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9602,CO RO GF Super Seed ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-02-27,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2060,CO RO Honey Sweet,1.0,1,1,STRONG,OK,5.0,0
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2120,CO RO Rocky Mt Sour,6.0,5,4,STRONG,OK,5.0,1
+2025-12-30,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2120,CO RO Rocky Mt Sour ,3.0,3,2,STRONG,OK,5.0,1
+2026-02-27,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-10,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2026-02-17,754,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-06,754,Monday,Safeway *SBT #631 Vail,Vail,30,9530,CO GF Briouche Loaf,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,9530,CO GF Briouche Loaf ,2.0,2,1,STRONG,OK,4.0,1
+2026-03-10,754,Monday,Safeway *SBT #631 Vail,Vail,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2026-02-27,754,Monday,Safeway *SBT #631 Vail,Vail,30,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,2040,CO RO Country Morn  ,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-10,754,Monday,Safeway *SBT #631 Vail,Vail,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-06,754,Monday,Safeway *SBT #631 Vail,Vail,30,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2026-03-06,754,Monday,Safeway *SBT #631 Vail,Vail,30,9450,CO RO GF SOURDOUGH,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,9450,CO RO GF SOURDOUGH  ,2.0,2,2,STRONG,OK,4.0,0
+2026-03-06,754,Monday,Safeway *SBT #631 Vail,Vail,30,9602,CO RO GF Super Seed,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,9602,CO RO GF Super Seed ,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-10,754,Monday,Safeway *SBT #631 Vail,Vail,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-06,754,Monday,Safeway *SBT #631 Vail,Vail,30,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-10,754,Monday,Safeway *SBT #631 Vail,Vail,30,2120,CO RO Rocky Mt Sour,4.0,4,4,STRONG,OK,5.0,0
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,2120,CO RO Rocky Mt Sour ,3.0,3,4,STRONG,OK,5.0,-1
+2026-02-13,754,Monday,Safeway *SBT #631 Vail,Vail,30,4110,CO RO THIN HON WHT,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,754,Monday,Safeway *SBT #631 Vail,Vail,30,4110,CO RO THIN HON WHT  ,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-10,754,Monday,Safeway *SBT #631 Vail,Vail,30,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-03,754,Monday,Safeway *SBT #631 Vail,Vail,30,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9530,CO GF Briouche Loaf ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2040,CO RO Country Morn  ,4.0,4,2,MODERATE,WATCH,5.0,2
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9500,CO RO GF HOME ORIGI,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9500,CO RO GF HOME ORIGI ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9450,CO RO GF SOURDOUGH  ,4.0,4,4,STRONG,OK,4.0,0
+2026-03-06,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9602,CO RO GF Super Seed ,2.0,2,4,STRONG,OK,4.0,-2
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-02-24,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2120,CO RO Rocky Mt Sour,5.0,5,4,STRONG,OK,5.0,1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,2120,CO RO Rocky Mt Sour ,9.0,5,2,STRONG,OK,5.0,3
+2026-03-03,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-10,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,4120,CO RO THIN RM SOUR  ,1.0,1,2,STRONG,OK,4.0,-1
+2026-02-27,754,Monday,Safeway *SBT #836 Frisco,Frisco,30,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,9530,CO GF Briouche Loaf ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,2160,CO RO 100% Bread WW ,4.0,4,2,STRONG,OK,5.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,9500,CO RO GF HOME ORIGI ,5.0,4,2,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,9602,CO RO GF Super Seed ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,2060,CO RO Honey Sweet   ,3.0,3,1,MODERATE,WATCH,5.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,2120,CO RO Rocky Mt Sour ,8.0,5,4,STRONG,OK,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1975-Fountain,Fountain,75,4120,CO RO THIN RM SOUR  ,6.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,9530,CO GF Briouche Loaf,2.0,2,0,STRONG,OK,4.0,2
+2026-03-27,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2160,CO RO 100% Bread WW,3.0,3,0,STRONG,OK,5.0,3
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2040,CO RO Country Morn,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-24,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2352,CO RO Crckd Wht Sour,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,9450,CO RO GF SOURDOUGH,3.0,3,0,STRONG,OK,4.0,3
+2026-03-17,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,9602,CO RO GF Super Seed,5.0,4,2,STRONG,OK,4.0,2
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2060,CO RO Honey Sweet,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-24,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2100,CO RO Multigrain Oat,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,2120,CO RO Rocky Mt Sour,5.0,5,0,STRONG,OK,5.0,5
+2026-03-31,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,4120,CO RO THIN RM SOUR,3.0,1,0,STRONG,OK,4.0,1
+2026-03-27,755,Monday,Safeway *SBT #1975-Fountain,Fountain,75,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,2160,CO RO 100% Bread WW ,1.0,1,1,STRONG,OK,5.0,0
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,2352,CO RO Crckd Wht Sour,2.0,2,0,MODERATE,WATCH,5.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,9602,CO RO GF Super Seed ,2.0,2,2,MODERATE,WATCH,4.0,0
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,2060,CO RO Honey Sweet   ,6.0,5,2,STRONG,OK,5.0,3
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,6.0,5,4,STRONG,OK,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,5.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,755,Monday,Safeway *SBT  #1286-W. Colorad,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2040,CO RO Country Morn  ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,9502,CO RO GF HOME MULTI ,2.0,2,0,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet   ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1466-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,5.0,5,4,STRONG,OK,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed ,2.0,2,2,MODERATE,WATCH,4.0,0
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet   ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,8.0,5,4,STRONG,OK,5.0,1
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,4.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,755,Monday,Safeway *SBT  #1499-CO Springs,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-29,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,2160,CO RO 100% Bread WW ,2.0,2,0,STRONG,OK,5.0,2
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,2040,CO RO Country Morn  ,2.0,2,0,MODERATE,WATCH,5.0,2
+2025-12-24,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,2060,CO RO Honey Sweet   ,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,2.0,2,0,STRONG,OK,5.0,2
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,3.0,1,0,STRONG,OK,4.0,1
+2025-12-31,755,Monday,Safeway *SBT  #2816-S. Nevada,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-24,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,9530,CO GF Briouche Loaf ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2160,CO RO 100% Bread WW ,1.0,1,0,STRONG,OK,5.0,1
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2040,CO RO Country Morn  ,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-24,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,9602,CO RO GF Super Seed ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-29,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2100,CO RO Multigrain Oat,2.0,2,0,MODERATE,WATCH,5.0,2
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,4.0,4,0,STRONG,OK,5.0,4
+2025-12-31,755,Monday,Safeway *SBT  #812-N. Wahsatch,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,1.0,1,0,STRONG,OK,4.0,1
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,9530,CO GF Briouche Loaf,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,3,STRONG,OK,5.0,-2
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-28,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,9500,CO RO GF HOME ORIGI,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-24,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,9450,CO RO GF SOURDOUGH,4.0,4,0,STRONG,OK,4.0,4
+2026-03-20,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,9602,CO RO GF Super Seed,2.0,2,3,MODERATE,WATCH,4.0,-1
+2026-03-24,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2060,CO RO Honey Sweet,5.0,5,0,MODERATE,WATCH,5.0,5
+2026-03-24,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2100,CO RO Multigrain Oat,4.0,4,0,MODERATE,WATCH,5.0,4
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,2120,CO RO Rocky Mt Sour,3.0,3,5,STRONG,OK,5.0,-2
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,4120,CO RO THIN RM SOUR,2.0,1,5,STRONG,OK,4.0,-4
+2026-03-27,755,Monday,Safeway *SBT #1286-W. Colorad,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-17,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf,2.0,2,2,STRONG,OK,4.0,0
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,4,STRONG,OK,5.0,-3
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2040,CO RO Country Morn,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,9500,CO RO GF HOME ORIGI,4.0,4,4,STRONG,OK,4.0,0
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-13,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour,3.0,3,5,STRONG,OK,5.0,-2
+2026-03-31,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,4120,CO RO THIN RM SOUR,3.0,1,5,STRONG,OK,4.0,-4
+2026-03-24,755,Monday,Safeway *SBT #1466-CO Springs,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,4.0,4,2,MODERATE,WATCH,4.0,2
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-13,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-02-06,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-02-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-20,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-06,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-20,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour,7.0,5,8,STRONG,OK,5.0,-3
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,4120,CO RO THIN RM SOUR,4.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,755,Monday,Safeway *SBT #1499-CO Springs,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-26,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-26,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2040,CO RO Country Morn,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2352,CO RO Crckd Wht Sour,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,9500,CO RO GF HOME ORIGI,3.0,3,2,STRONG,OK,4.0,1
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,9450,CO RO GF SOURDOUGH,3.0,3,0,STRONG,OK,4.0,3
+2026-03-23,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,2120,CO RO Rocky Mt Sour,4.0,4,8,STRONG,OK,5.0,-4
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-30,755,Monday,Safeway *SBT #2816-S. Nevada,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9530,CO GF Briouche Loaf,2.0,2,2,STRONG,OK,4.0,0
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-23,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2040,CO RO Country Morn,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-02-05,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9502,CO RO GF HOME MULTI,3.0,3,0,STRONG,OK,4.0,3
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9500,CO RO GF HOME ORIGI,2.0,2,2,STRONG,OK,4.0,0
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2060,CO RO Honey Sweet,3.0,3,2,STRONG,OK,5.0,1
+2026-03-26,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,2120,CO RO Rocky Mt Sour,9.0,5,6,STRONG,OK,5.0,-1
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-30,755,Monday,Safeway *SBT #812-N. Wahsatch,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9530,CO GF Briouche Loaf,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9530,CO GF Briouche Loaf ,2.0,2,0,STRONG,OK,4.0,2
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2160,CO RO 100% Bread WW ,2.0,2,0,STRONG,OK,5.0,2
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2040,CO RO Country Morn,4.0,4,3,MODERATE,WATCH,5.0,1
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2040,CO RO Country Morn  ,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9500,CO RO GF HOME ORIGI,2.0,2,2,STRONG,OK,4.0,0
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9500,CO RO GF HOME ORIGI ,2.0,2,0,STRONG,OK,4.0,2
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,2.0,2,0,STRONG,OK,4.0,2
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9602,CO RO GF Super Seed ,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-06,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-20,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2120,CO RO Rocky Mt Sour,7.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,7.0,5,0,STRONG,OK,5.0,5
+2026-03-27,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,6.0,1,0,STRONG,OK,4.0,1
+2026-03-13,755,Monday,Safeway *SBT ons #0879-Centenn,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,9530,CO GF Briouche Loaf ,3.0,3,1,STRONG,OK,4.0,2
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,2160,CO RO 100% Bread WW ,5.0,5,2,STRONG,OK,5.0,3
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,9500,CO RO GF HOME ORIGI ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,9450,CO RO GF SOURDOUGH  ,3.0,3,1,STRONG,OK,4.0,2
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,9602,CO RO GF Super Seed ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,2060,CO RO Honey Sweet   ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,2100,CO RO Multigrain Oat,4.0,4,1,MODERATE,WATCH,5.0,3
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,2120,CO RO Rocky Mt Sour ,13.0,5,4,STRONG,OK,5.0,1
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,4120,CO RO THIN RM SOUR  ,5.0,1,3,STRONG,OK,4.0,-2
+2025-12-29,756,Monday,Safeway *SBT  #1656-Coalton,Superior,30,9531,GF BRIOCHE BURGER BZ,2.0,2,0,MODERATE,WATCH,4.0,2
+2026-03-28,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,9530,CO GF Briouche Loaf,4.0,4,0,STRONG,OK,4.0,4
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-26,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,9500,CO RO GF HOME ORIGI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-28,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,9450,CO RO GF SOURDOUGH,6.0,4,5,STRONG,OK,4.0,-1
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-23,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,2120,CO RO Rocky Mt Sour,5.0,5,6,STRONG,OK,5.0,-1
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,756,Wednesday,Safeway *SBT #1656-Coalton,Superior,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,2160,CO RO 100% Bread WW ,1.0,1,1,STRONG,OK,5.0,0
+2025-12-27,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-27,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,9450,CO RO GF SOURDOUGH  ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-27,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,9602,CO RO GF Super Seed ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,2120,CO RO Rocky Mt Sour ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,756,Friday,Safeway *SBT  #1635-Federal,Federal Heights,30,4120,CO RO THIN RM SOUR  ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-13,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,9450,CO RO GF SOURDOUGH,1.0,1,0,STRONG,OK,4.0,1
+2026-03-24,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-24,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2060,CO RO Honey Sweet,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,2120,CO RO Rocky Mt Sour,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,4120,CO RO THIN RM SOUR,2.0,1,1,STRONG,OK,4.0,0
+2026-02-27,756,Friday,Safeway *SBT #1635-Federal,Federal Heights,30,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2025-12-27,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9530,CO GF Briouche Loaf ,1.0,1,0,STRONG,OK,4.0,1
+2026-03-27,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2160,CO RO 100% Bread WW,2.0,2,1,STRONG,OK,5.0,1
+2025-12-27,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2160,CO RO 100% Bread WW ,1.0,1,0,STRONG,OK,5.0,1
+2026-03-24,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2040,CO RO Country Morn,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-30,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9450,CO RO GF SOURDOUGH  ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-27,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2060,CO RO Honey Sweet   ,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2120,CO RO Rocky Mt Sour,2.0,2,4,STRONG,OK,5.0,-2
+2025-12-30,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,2120,CO RO Rocky Mt Sour ,3.0,3,3,STRONG,OK,5.0,0
+2026-01-23,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,4110,CO RO THIN HON WHT,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-31,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,4120,CO RO THIN RM SOUR,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,4120,CO RO THIN RM SOUR  ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-24,756,Friday,Safeway *SBT #1873 Thornton,Thornton,22,9531,GF BRIOCHE BURGER BZ,2.0,2,0,MODERATE,WATCH,4.0,2
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9530,CO GF Briouche Loaf,1.0,1,0,STRONG,OK,4.0,1
+2025-12-27,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-27,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-27,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2025-12-27,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9450,CO RO GF SOURDOUGH,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9450,CO RO GF SOURDOUGH  ,1.0,1,1,STRONG,OK,4.0,0
+2026-02-17,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2060,CO RO Honey Sweet,1.0,1,1,STRONG,OK,5.0,0
+2025-12-30,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2060,CO RO Honey Sweet   ,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2120,CO RO Rocky Mt Sour,3.0,3,2,STRONG,OK,5.0,1
+2025-12-30,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,2120,CO RO Rocky Mt Sour ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,4120,CO RO THIN RM SOUR,3.0,1,1,STRONG,OK,4.0,0
+2025-12-30,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,756,Friday,Safeway *SBT ons #0892-3840 E.,Thornton,22,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,9530,CO GF Briouche Loaf ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,9500,CO RO GF HOME ORIGI ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-24,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,2120,CO RO Rocky Mt Sour ,5.0,5,4,STRONG,OK,5.0,1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,4110,CO RO THIN HON WHT  ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-29,756,Friday,Safeway *SBT  #1998-W. 80th,Arvada,18,4120,CO RO THIN RM SOUR  ,4.0,1,1,STRONG,OK,4.0,0
+2026-03-19,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9530,CO GF Briouche Loaf,3.0,3,1,STRONG,OK,4.0,2
+2026-03-26,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-23,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-16,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9502,CO RO GF HOME MULTI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-26,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9450,CO RO GF SOURDOUGH,5.0,4,2,STRONG,OK,4.0,2
+2026-03-26,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9602,CO RO GF Super Seed,2.0,2,3,MODERATE,WATCH,4.0,-1
+2026-03-30,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-02-16,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-30,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-16,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,4110,CO RO THIN HON WHT,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,4120,CO RO THIN RM SOUR,1.0,1,1,STRONG,OK,4.0,0
+2026-03-12,756,Friday,Safeway *SBT #1998-W. 80th,Arvada,18,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-17,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-02-03,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,9502,CO RO GF HOME MULTI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-27,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,9450,CO RO GF SOURDOUGH,2.0,2,2,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,9602,CO RO GF Super Seed,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2060,CO RO Honey Sweet,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-31,757,Wednesday,Safeway *SBT #1479-Wadsworth,Wheat Ridge,30,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,9530,CO GF Briouche Loaf ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-27,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,9450,CO RO GF SOURDOUGH  ,3.0,3,1,STRONG,OK,4.0,2
+2025-12-27,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,9602,CO RO GF Super Seed ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-27,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,2120,CO RO Rocky Mt Sour ,7.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,4120,CO RO THIN RM SOUR  ,5.0,2,4,STRONG,OK,4.0,-2
+2025-12-27,757,Wednesday,Safeway *SBT  #244-Denver,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-20,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-27,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2060,CO RO Honey Sweet,2.0,2,1,STRONG,OK,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2120,CO RO Rocky Mt Sour,3.0,3,6,STRONG,OK,5.0,-3
+2026-03-31,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,757,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-27,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2160,CO RO 100% Bread WW,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-20,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2100,CO RO Multigrain Oat,5.0,5,2,MODERATE,WATCH,5.0,3
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,2120,CO RO Rocky Mt Sour,8.0,5,4,STRONG,OK,5.0,1
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,4120,CO RO THIN RM SOUR,2.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,757,Wednesday,Safeway *SBT #244-Denver,Denver,28,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2025-12-27,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,9530,CO GF Briouche Loaf ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-27,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,9602,CO RO GF Super Seed ,2.0,2,2,MODERATE,WATCH,4.0,0
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,2120,CO RO Rocky Mt Sour ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-30,757,Friday,Safeway *SBT  #1479-Wadsworth,Wheat Ridge,30,4120,CO RO THIN RM SOUR  ,4.0,2,3,STRONG,OK,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,9530,CO GF Briouche Loaf ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,2160,CO RO 100% Bread WW ,1.0,1,0,STRONG,OK,5.0,1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,9500,CO RO GF HOME ORIGI ,3.0,3,4,STRONG,OK,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,9450,CO RO GF SOURDOUGH  ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,2060,CO RO Honey Sweet   ,2.0,2,2,STRONG,OK,5.0,0
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,2120,CO RO Rocky Mt Sour ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,4120,CO RO THIN RM SOUR  ,4.0,1,4,STRONG,OK,4.0,-3
+2025-12-27,758,Wednesday,Safeway *SBT  #1599-W. Ken Car,Littleton,32,9531,GF BRIOCHE BURGER BZ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-13,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,9500,CO RO GF HOME ORIGI,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2060,CO RO Honey Sweet,4.0,4,1,STRONG,OK,5.0,3
+2026-03-20,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-20,758,Wednesday,Safeway *SBT #1599-W. Ken Car,Littleton,32,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-27,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-27,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,9500,CO RO GF HOME ORIGI,4.0,4,2,STRONG,OK,4.0,2
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-06,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-27,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,758,Wednesday,Safeway *SBT #27-S. Kipling,Littleton,32,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,9530,CO GF Briouche Loaf ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,2060,CO RO Honey Sweet   ,5.0,5,2,MODERATE,WATCH,5.0,3
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,2120,CO RO Rocky Mt Sour ,4.0,4,6,STRONG,OK,5.0,-2
+2025-12-30,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,4120,CO RO THIN RM SOUR  ,2.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,758,Wednesday,Safeway *SBT  #10-S. Hwy 74,Evergreen,30,9531,GF BRIOCHE BURGER BZ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2160,CO RO 100% Bread WW ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2040,CO RO Country Morn  ,3.0,3,3,MODERATE,WATCH,5.0,0
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,9500,CO RO GF HOME ORIGI ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2060,CO RO Honey Sweet   ,3.0,3,3,STRONG,OK,5.0,0
+2025-12-27,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2100,CO RO Multigrain Oat,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,2120,CO RO Rocky Mt Sour ,7.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,4120,CO RO THIN RM SOUR  ,5.0,1,4,STRONG,OK,4.0,-3
+2025-12-27,758,Wednesday,Safeway *SBT  #2792-Main,Conifer,30,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2040,CO RO Country Morn  ,2.0,2,0,MODERATE,WATCH,5.0,2
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2352,CO RO Crckd Wht Sour,2.0,2,0,MODERATE,WATCH,5.0,2
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,9602,CO RO GF Super Seed ,2.0,2,3,STRONG,OK,4.0,-1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2060,CO RO Honey Sweet   ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2100,CO RO Multigrain Oat,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,2120,CO RO Rocky Mt Sour ,2.0,2,5,STRONG,OK,5.0,-3
+2025-12-29,758,Wednesday,Safeway *SBT  #322-Jackson,Golden,30,4120,CO RO THIN RM SOUR  ,2.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-24,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2160,CO RO 100% Bread WW,4.0,4,2,STRONG,OK,5.0,2
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-02-06,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9502,CO RO GF HOME MULTI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9500,CO RO GF HOME ORIGI,3.0,3,2,STRONG,OK,4.0,1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9450,CO RO GF SOURDOUGH,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2060,CO RO Honey Sweet,1.0,1,0,STRONG,OK,5.0,1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,2120,CO RO Rocky Mt Sour,4.0,4,2,STRONG,OK,5.0,2
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,4120,CO RO THIN RM SOUR,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,758,Wednesday,Safeway *SBT #10-S. Hwy 74,Evergreen,30,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-27,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2160,CO RO 100% Bread WW,4.0,4,2,STRONG,OK,5.0,2
+2026-03-27,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-24,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,9500,CO RO GF HOME ORIGI,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,9602,CO RO GF Super Seed,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,2120,CO RO Rocky Mt Sour,6.0,5,2,STRONG,OK,5.0,3
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,4120,CO RO THIN RM SOUR,5.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,758,Wednesday,Safeway *SBT #2792-Main,Conifer,30,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,9602,CO RO GF Super Seed,2.0,2,1,STRONG,OK,4.0,1
+2026-03-28,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2060,CO RO Honey Sweet,1.0,1,1,STRONG,OK,5.0,0
+2026-03-28,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-30,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-21,758,Wednesday,Safeway *SBT #322-Jackson,Golden,30,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,9530,CO GF Briouche Loaf ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,9450,CO RO GF SOURDOUGH  ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-27,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,2060,CO RO Honey Sweet   ,2.0,2,1,MODERATE,WATCH,5.0,1
+2025-12-27,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,2120,CO RO Rocky Mt Sour ,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-30,758,Friday,Safeway *SBT  #27-S. Kipling,Littleton,32,4120,CO RO THIN RM SOUR  ,3.0,1,4,STRONG,OK,4.0,-3
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,9530,CO GF Briouche Loaf ,3.0,3,1,STRONG,OK,4.0,2
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2160,CO RO 100% Bread WW ,4.0,4,1,STRONG,OK,5.0,3
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2060,CO RO Honey Sweet   ,3.0,3,1,STRONG,OK,5.0,2
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,2120,CO RO Rocky Mt Sour ,6.0,5,3,STRONG,OK,5.0,2
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,4120,CO RO THIN RM SOUR  ,3.0,1,4,STRONG,OK,4.0,-3
+2025-12-29,758,Friday,Safeway *SBT  #2342-West Jewel,Lakewood,25,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,9530,CO GF Briouche Loaf ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,2160,CO RO 100% Bread WW ,1.0,1,0,STRONG,OK,5.0,1
+2025-12-29,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,2040,CO RO Country Morn  ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,9500,CO RO GF HOME ORIGI ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,9450,CO RO GF SOURDOUGH  ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,9602,CO RO GF Super Seed ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2025-12-29,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,2060,CO RO Honey Sweet   ,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-29,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,2100,CO RO Multigrain Oat,3.0,3,3,MODERATE,WATCH,5.0,0
+2025-12-29,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,2120,CO RO Rocky Mt Sour ,4.0,4,8,STRONG,OK,5.0,-4
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,4120,CO RO THIN RM SOUR  ,3.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,758,Friday,Safeway *SBT  #41-W. Alameda,Lakewood,25,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2026-03-19,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2060,CO RO Honey Sweet,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,2120,CO RO Rocky Mt Sour,2.0,2,1,STRONG,OK,5.0,1
+2026-03-30,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,4120,CO RO THIN RM SOUR,1.0,1,1,STRONG,OK,4.0,0
+2026-03-28,758,Friday,Safeway *SBT #2342-West Jewel,Lakewood,25,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-26,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2160,CO RO 100% Bread WW,1.0,1,3,STRONG,OK,5.0,-2
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2040,CO RO Country Morn,3.0,3,4,MODERATE,WATCH,5.0,-1
+2026-03-28,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,9500,CO RO GF HOME ORIGI,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,9450,CO RO GF SOURDOUGH,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-16,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2060,CO RO Honey Sweet,1.0,1,3,STRONG,OK,5.0,-2
+2026-03-26,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2100,CO RO Multigrain Oat,1.0,1,4,MODERATE,WATCH,5.0,-3
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,2120,CO RO Rocky Mt Sour,2.0,2,4,STRONG,OK,5.0,-2
+2026-03-30,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,4120,CO RO THIN RM SOUR,2.0,1,2,STRONG,OK,4.0,-1
+2026-03-26,758,Friday,Safeway *SBT #41-W. Alameda,Lakewood,25,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2160,CO RO 100% Bread WW,3.0,3,2,STRONG,OK,5.0,1
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-17,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-17,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9450,CO RO GF SOURDOUGH,2.0,2,2,STRONG,OK,4.0,0
+2026-03-20,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,2120,CO RO Rocky Mt Sour,2.0,2,2,STRONG,OK,5.0,0
+2026-03-20,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-27,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-20,759,Monday,Safeway *SBT #390-Idaho Spring,Idaho Springs,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,759,Monday,Safeway *SBT #631 Vail,Vail,30,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,9450,CO RO GF SOURDOUGH,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-24,759,Monday,Safeway *SBT #631 Vail,Vail,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,2120,CO RO Rocky Mt Sour,6.0,5,2,STRONG,OK,5.0,3
+2026-03-31,759,Monday,Safeway *SBT #631 Vail,Vail,30,4120,CO RO THIN RM SOUR,4.0,1,2,STRONG,OK,4.0,-1
+2026-03-24,759,Monday,Safeway *SBT #631 Vail,Vail,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-20,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2160,CO RO 100% Bread WW,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-24,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-20,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2352,CO RO Crckd Wht Sour,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-20,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-20,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,9602,CO RO GF Super Seed,1.0,1,0,STRONG,OK,4.0,1
+2026-03-24,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-20,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,2120,CO RO Rocky Mt Sour,9.0,5,4,STRONG,OK,5.0,1
+2026-03-24,759,Monday,Safeway *SBT #836 Frisco,Frisco,30,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,9530,CO GF Briouche Loaf ,2.0,2,2,STRONG,OK,4.0,0
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2160,CO RO 100% Bread WW ,10.0,5,4,STRONG,OK,5.0,1
+2025-12-27,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,9602,CO RO GF Super Seed ,2.0,2,0,MODERATE,WATCH,4.0,2
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2060,CO RO Honey Sweet   ,3.0,3,2,MODERATE,WATCH,5.0,1
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,2120,CO RO Rocky Mt Sour ,5.0,5,8,STRONG,OK,5.0,-3
+2025-12-27,759,Wednesday,Safeway *SBT  #1614-Corona St,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-27,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,9530,CO GF Briouche Loaf ,3.0,3,4,STRONG,OK,4.0,-1
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,2160,CO RO 100% Bread WW ,7.0,5,2,STRONG,OK,5.0,3
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,2040,CO RO Country Morn  ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-27,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,9450,CO RO GF SOURDOUGH  ,3.0,3,4,STRONG,OK,4.0,-1
+2025-12-27,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,9602,CO RO GF Super Seed ,3.0,3,4,STRONG,OK,4.0,-1
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,2060,CO RO Honey Sweet   ,3.0,3,1,STRONG,OK,5.0,2
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,2120,CO RO Rocky Mt Sour ,6.0,5,12,STRONG,OK,5.0,-7
+2025-12-30,759,Wednesday,Safeway *SBT  #2246-Denver,Denver,28,4120,CO RO THIN RM SOUR  ,3.0,1,5,STRONG,OK,4.0,-4
+2026-01-30,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2160,CO RO 100% Bread WW,4.0,4,0,STRONG,OK,5.0,4
+2026-01-30,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-02-06,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-01-23,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9502,CO RO GF HOME MULTI,1.0,1,1,STRONG,OK,4.0,0
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9450,CO RO GF SOURDOUGH,1.0,1,0,STRONG,OK,4.0,1
+2026-02-03,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2060,CO RO Honey Sweet,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,2120,CO RO Rocky Mt Sour,7.0,5,0,STRONG,OK,5.0,5
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,4120,CO RO THIN RM SOUR,4.0,1,0,STRONG,OK,4.0,1
+2026-02-10,759,Wednesday,Safeway *SBT #1248-Denver,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2040,CO RO Country Morn,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,9500,CO RO GF HOME ORIGI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,9450,CO RO GF SOURDOUGH,6.0,4,0,STRONG,OK,4.0,4
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,9602,CO RO GF Super Seed,2.0,2,2,STRONG,OK,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2060,CO RO Honey Sweet,3.0,3,2,STRONG,OK,5.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,2120,CO RO Rocky Mt Sour,9.0,5,12,STRONG,OK,5.0,-7
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,4110,CO RO THIN HON WHT,2.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,4120,CO RO THIN RM SOUR,5.0,1,0,STRONG,OK,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1463-S. Downing,Denver,28,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2026-03-26,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-26,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,9450,CO RO GF SOURDOUGH,4.0,4,1,STRONG,OK,4.0,3
+2026-03-26,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,9602,CO RO GF Super Seed,4.0,4,1,STRONG,OK,4.0,3
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2100,CO RO Multigrain Oat,4.0,4,2,MODERATE,WATCH,5.0,2
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,2120,CO RO Rocky Mt Sour,2.0,2,4,STRONG,OK,5.0,-2
+2026-03-12,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,4120,CO RO THIN RM SOUR,6.0,1,4,STRONG,OK,4.0,-3
+2026-03-26,759,Wednesday,Safeway *SBT #1614-Corona St,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2160,CO RO 100% Bread WW,3.0,3,0,STRONG,OK,5.0,3
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,9450,CO RO GF SOURDOUGH,2.0,2,4,STRONG,OK,4.0,-2
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-23,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,2120,CO RO Rocky Mt Sour,2.0,2,2,STRONG,OK,5.0,0
+2026-03-23,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,4110,CO RO THIN HON WHT,3.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,4120,CO RO THIN RM SOUR,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-23,759,Wednesday,Safeway *SBT #2246-Denver,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,9530,CO GF Briouche Loaf,3.0,3,1,STRONG,OK,4.0,2
+2026-03-26,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2040,CO RO Country Morn,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-26,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,2120,CO RO Rocky Mt Sour,4.0,4,4,STRONG,OK,5.0,0
+2026-03-09,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,4110,CO RO THIN HON WHT,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,4120,CO RO THIN RM SOUR,4.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,759,Wednesday,Safeway *SBT ons #0885-323 S.B,Denver,28,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,9530,CO GF Briouche Loaf ,2.0,2,0,STRONG,OK,4.0,2
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,2160,CO RO 100% Bread WW ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,2040,CO RO Country Morn  ,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-24,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,9500,CO RO GF HOME ORIGI ,2.0,2,0,STRONG,OK,4.0,2
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,9450,CO RO GF SOURDOUGH  ,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,2060,CO RO Honey Sweet   ,1.0,1,0,STRONG,OK,5.0,1
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,2120,CO RO Rocky Mt Sour ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-30,759,Friday,Safeway *SBT  #1248-Denver,Denver,28,4120,CO RO THIN RM SOUR  ,3.0,1,0,STRONG,OK,4.0,1
+2025-12-30,759,Friday,Safeway *SBT  #1463-S. Downing,Denver,28,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,759,Friday,Safeway *SBT  #1463-S. Downing,Denver,28,2040,CO RO Country Morn  ,5.0,5,2,MODERATE,WATCH,5.0,3
+2025-12-30,759,Friday,Safeway *SBT  #1463-S. Downing,Denver,28,2060,CO RO Honey Sweet   ,5.0,5,2,MODERATE,WATCH,5.0,3
+2025-12-30,759,Friday,Safeway *SBT  #1463-S. Downing,Denver,28,2120,CO RO Rocky Mt Sour ,11.0,5,4,STRONG,OK,5.0,1
+2025-12-30,759,Friday,Safeway *SBT  #1463-S. Downing,Denver,28,4120,CO RO THIN RM SOUR  ,6.0,2,3,STRONG,OK,4.0,-1
+2026-03-26,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9530,CO GF Briouche Loaf ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-24,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2040,CO RO Country Morn  ,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2025-12-29,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9500,CO RO GF HOME ORIGI ,2.0,2,2,STRONG,OK,4.0,0
+2026-03-26,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9450,CO RO GF SOURDOUGH  ,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-23,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2025-12-24,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9602,CO RO GF Super Seed ,4.0,4,1,STRONG,OK,4.0,3
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-26,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2120,CO RO Rocky Mt Sour,6.0,5,4,STRONG,OK,5.0,1
+2025-12-31,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,2120,CO RO Rocky Mt Sour ,2.0,2,4,STRONG,OK,5.0,-2
+2026-03-26,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,4120,CO RO THIN RM SOUR  ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-30,760,Monday,Safeway *SBT ons #0899-6100 S.,Aurora,35,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,2040,CO RO Country Morn  ,3.0,3,2,MODERATE,WATCH,5.0,1
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-27,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,9602,CO RO GF Super Seed ,6.0,4,1,MODERATE,WATCH,4.0,3
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,2060,CO RO Honey Sweet   ,4.0,4,1,STRONG,OK,5.0,3
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,2120,CO RO Rocky Mt Sour ,6.0,5,3,STRONG,OK,5.0,2
+2025-12-30,760,Wednesday,Safeway *SBT  #1928-Aurora,Aurora,35,4120,CO RO THIN RM SOUR  ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-29,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-24,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2160,CO RO 100% Bread WW ,1.0,1,4,STRONG,OK,5.0,-3
+2025-12-29,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-24,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,9450,CO RO GF SOURDOUGH  ,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-24,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,9602,CO RO GF Super Seed ,2.0,2,0,MODERATE,WATCH,4.0,2
+2025-12-31,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2060,CO RO Honey Sweet   ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-24,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2025-12-31,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,2120,CO RO Rocky Mt Sour ,3.0,3,5,STRONG,OK,5.0,-2
+2025-12-31,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,4120,CO RO THIN RM SOUR  ,7.0,2,3,STRONG,OK,4.0,-1
+2025-12-24,760,Wednesday,Safeway *SBT  #8-W. Arapahoe,Centennial,35,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2160,CO RO 100% Bread WW,1.0,1,3,STRONG,OK,5.0,-2
+2026-03-24,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-24,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-13,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,9450,CO RO GF SOURDOUGH,2.0,2,2,STRONG,OK,4.0,0
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,2120,CO RO Rocky Mt Sour,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,4120,CO RO THIN RM SOUR,2.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,760,Wednesday,Safeway *SBT #1928-Aurora,Aurora,35,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9502,CO RO GF HOME MULTI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-26,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,2120,CO RO Rocky Mt Sour,5.0,5,4,STRONG,OK,5.0,1
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,4120,CO RO THIN RM SOUR,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,760,Wednesday,Safeway *SBT #8-W. Arapahoe,Centennial,35,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,9530,CO GF Briouche Loaf ,2.0,2,2,STRONG,OK,4.0,0
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,2160,CO RO 100% Bread WW ,4.0,4,3,STRONG,OK,5.0,1
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-27,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,9500,CO RO GF HOME ORIGI ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,9602,CO RO GF Super Seed ,2.0,2,1,MODERATE,WATCH,4.0,1
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,2060,CO RO Honey Sweet   ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,2120,CO RO Rocky Mt Sour ,6.0,5,8,STRONG,OK,5.0,-3
+2025-12-30,760,Wednesday,Safeway *SBT  #1267-E. Yale,Denver,28,4120,CO RO THIN RM SOUR  ,4.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2160,CO RO 100% Bread WW,4.0,4,1,STRONG,OK,5.0,3
+2026-03-20,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-03,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9502,CO RO GF HOME MULTI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9450,CO RO GF SOURDOUGH,2.0,2,2,STRONG,OK,4.0,0
+2026-03-24,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2060,CO RO Honey Sweet,3.0,3,1,STRONG,OK,5.0,2
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2100,CO RO Multigrain Oat,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,2120,CO RO Rocky Mt Sour,8.0,5,4,STRONG,OK,5.0,1
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,760,Wednesday,Safeway *SBT #1267-E. Yale,Denver,28,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2160,CO RO 100% Bread WW ,6.0,5,12,STRONG,OK,5.0,-7
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-29,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,9450,CO RO GF SOURDOUGH  ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,9602,CO RO GF Super Seed ,2.0,2,4,STRONG,OK,4.0,-2
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2060,CO RO Honey Sweet   ,6.0,5,12,MODERATE,WATCH,5.0,-7
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2100,CO RO Multigrain Oat,5.0,5,12,MODERATE,WATCH,5.0,-7
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,2120,CO RO Rocky Mt Sour ,10.0,5,12,STRONG,OK,5.0,-7
+2025-12-31,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,4120,CO RO THIN RM SOUR  ,4.0,1,6,STRONG,OK,4.0,-5
+2025-12-29,761,Friday,Safeway *SBT  #1615-28th St,Boulder,0,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,9602,CO RO GF Super Seed ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,2060,CO RO Honey Sweet   ,1.0,1,5,MODERATE,WATCH,5.0,-4
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,2120,CO RO Rocky Mt Sour ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2911-Arapahoe,Boulder,0,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,2160,CO RO 100% Bread WW ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,2040,CO RO Country Morn  ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,9500,CO RO GF HOME ORIGI ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,9450,CO RO GF SOURDOUGH  ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,2060,CO RO Honey Sweet   ,4.0,4,2,MODERATE,WATCH,5.0,2
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,2120,CO RO Rocky Mt Sour ,8.0,5,4,STRONG,OK,5.0,1
+2025-12-30,761,Friday,Safeway *SBT  #2919-E. Baselin,Boulder,0,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2160,CO RO 100% Bread WW,6.0,5,0,STRONG,OK,5.0,5
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2040,CO RO Country Morn,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-27,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-02-21,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9502,CO RO GF HOME MULTI,1.0,1,0,STRONG,OK,4.0,1
+2026-03-28,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9500,CO RO GF HOME ORIGI,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9450,CO RO GF SOURDOUGH,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2060,CO RO Honey Sweet,5.0,5,4,STRONG,OK,5.0,1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2100,CO RO Multigrain Oat,9.0,5,4,MODERATE,WATCH,5.0,1
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,2120,CO RO Rocky Mt Sour,8.0,5,12,STRONG,OK,5.0,-7
+2026-03-30,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,4120,CO RO THIN RM SOUR,7.0,2,4,STRONG,OK,4.0,-2
+2026-03-16,761,Friday,Safeway *SBT #1615-28th St,Boulder,0,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2040,CO RO Country Morn,3.0,3,3,MODERATE,WATCH,5.0,0
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,9500,CO RO GF HOME ORIGI,4.0,4,1,STRONG,OK,4.0,3
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,9450,CO RO GF SOURDOUGH,3.0,3,1,STRONG,OK,4.0,2
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,2120,CO RO Rocky Mt Sour,6.0,5,6,STRONG,OK,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,4120,CO RO THIN RM SOUR,4.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2911-Arapahoe,Boulder,0,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-24,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,9530,CO GF Briouche Loaf,3.0,3,1,STRONG,OK,4.0,2
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2160,CO RO 100% Bread WW,3.0,3,4,STRONG,OK,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2040,CO RO Country Morn,3.0,3,3,MODERATE,WATCH,5.0,0
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2352,CO RO Crckd Wht Sour,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,9450,CO RO GF SOURDOUGH,6.0,4,1,STRONG,OK,4.0,3
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,9602,CO RO GF Super Seed,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2060,CO RO Honey Sweet,4.0,4,4,STRONG,OK,5.0,0
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2100,CO RO Multigrain Oat,3.0,3,3,MODERATE,WATCH,5.0,0
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,2120,CO RO Rocky Mt Sour,8.0,5,6,STRONG,OK,5.0,-1
+2026-03-31,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,4120,CO RO THIN RM SOUR,2.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,761,Friday,Safeway *SBT #2919-E. Baselin,Boulder,0,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2160,CO RO 100% Bread WW,4.0,4,3,STRONG,OK,5.0,1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2040,CO RO Country Morn,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,9500,CO RO GF HOME ORIGI,4.0,4,2,STRONG,OK,4.0,2
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,9450,CO RO GF SOURDOUGH,5.0,4,2,STRONG,OK,4.0,2
+2026-03-24,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,9602,CO RO GF Super Seed,1.0,1,4,MODERATE,WATCH,4.0,-3
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2060,CO RO Honey Sweet,3.0,3,4,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2100,CO RO Multigrain Oat,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,2120,CO RO Rocky Mt Sour,10.0,5,12,STRONG,OK,5.0,-7
+2026-01-06,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,4100,CO RO THIN 100% WHT,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,4110,CO RO THIN HON WHT,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,4120,CO RO THIN RM SOUR,7.0,2,3,STRONG,OK,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT #1667-Arapahoe,Erie,30,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9530,CO GF Briouche Loaf,3.0,3,2,STRONG,OK,4.0,1
+2025-12-27,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9530,CO GF Briouche Loaf ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2160,CO RO 100% Bread WW,7.0,5,3,STRONG,OK,5.0,2
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2160,CO RO 100% Bread WW ,3.0,3,2,STRONG,OK,5.0,1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2040,CO RO Country Morn,4.0,4,2,MODERATE,WATCH,5.0,2
+2025-12-27,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-01-13,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9502,CO RO GF HOME MULTI,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9502,CO RO GF HOME MULTI ,2.0,2,3,STRONG,OK,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9500,CO RO GF HOME ORIGI ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2025-12-27,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9450,CO RO GF SOURDOUGH  ,3.0,3,0,STRONG,OK,4.0,3
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9602,CO RO GF Super Seed,5.0,4,2,STRONG,OK,4.0,2
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2060,CO RO Honey Sweet,5.0,5,3,STRONG,OK,5.0,2
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2060,CO RO Honey Sweet   ,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2120,CO RO Rocky Mt Sour,10.0,5,12,STRONG,OK,5.0,-7
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,2120,CO RO Rocky Mt Sour ,6.0,5,6,STRONG,OK,5.0,-1
+2026-01-06,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,4130,CO RO THIN CM WHITE,1.0,1,0,WEAK,HIGH,4.0,1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,4110,CO RO THIN HON WHT,5.0,1,3,MODERATE,WATCH,4.0,-2
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,4110,CO RO THIN HON WHT  ,3.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,4120,CO RO THIN RM SOUR,5.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,4120,CO RO THIN RM SOUR  ,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,763,Monday,Safeway *SBT on`s #2812-W. Che,Louisville,8,9531,GF BRIOCHE BURGER BZ,4.0,4,2,MODERATE,WATCH,4.0,2
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,9530,CO GF Briouche Loaf ,5.0,4,1,STRONG,OK,4.0,3
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,9502,CO RO GF HOME MULTI ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,9450,CO RO GF SOURDOUGH  ,4.0,4,1,STRONG,OK,4.0,3
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,2060,CO RO Honey Sweet   ,3.0,3,2,MODERATE,WATCH,5.0,1
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,2120,CO RO Rocky Mt Sour ,6.0,5,4,STRONG,OK,5.0,1
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,4110,CO RO THIN HON WHT  ,3.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,763,Wednesday,Safeway *SBT  #1667-Arapahoe,Erie,30,4120,CO RO THIN RM SOUR  ,5.0,1,4,STRONG,OK,4.0,-3
+2026-03-06,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-01-30,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2352,CO RO Crckd Wht Sour,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-02-20,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,2120,CO RO Rocky Mt Sour,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-27,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-20,763,Friday,Safeway *SBT #2917-Brighton,Brighton,30,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,9530,CO GF Briouche Loaf ,2.0,2,2,STRONG,OK,4.0,0
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,9500,CO RO GF HOME ORIGI ,2.0,2,1,STRONG,OK,4.0,1
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,9450,CO RO GF SOURDOUGH  ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,9602,CO RO GF Super Seed ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,2060,CO RO Honey Sweet   ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,2120,CO RO Rocky Mt Sour ,10.0,5,4,STRONG,OK,5.0,1
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,4110,CO RO THIN HON WHT  ,2.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,4120,CO RO THIN RM SOUR  ,4.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,763,Friday,Safeway *SBT  #2624-W. 144th,Broomfield,12,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,9530,CO GF Briouche Loaf,3.0,3,3,STRONG,OK,4.0,0
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2160,CO RO 100% Bread WW,4.0,4,3,STRONG,OK,5.0,1
+2026-03-24,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2352,CO RO Crckd Wht Sour,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,9500,CO RO GF HOME ORIGI,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,9450,CO RO GF SOURDOUGH,4.0,4,3,STRONG,OK,4.0,1
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,9602,CO RO GF Super Seed,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-24,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2060,CO RO Honey Sweet,1.0,1,4,STRONG,OK,5.0,-3
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2100,CO RO Multigrain Oat,2.0,2,3,MODERATE,WATCH,5.0,-1
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,2120,CO RO Rocky Mt Sour,11.0,5,12,STRONG,OK,5.0,-7
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,4110,CO RO THIN HON WHT,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,763,Friday,Safeway *SBT #2624-W. 144th,Broomfield,12,9531,GF BRIOCHE BURGER BZ,3.0,3,3,MODERATE,WATCH,4.0,0
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,2040,CO RO Country Morn  ,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,9450,CO RO GF SOURDOUGH  ,3.0,3,3,STRONG,OK,4.0,0
+2025-12-27,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,9602,CO RO GF Super Seed ,2.0,2,2,STRONG,OK,4.0,0
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,2120,CO RO Rocky Mt Sour ,7.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,764,Monday,Safeway *SBT  #2666-Centerplac,Greeley,50,9531,GF BRIOCHE BURGER BZ,3.0,3,1,MODERATE,WATCH,4.0,2
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,9450,CO RO GF SOURDOUGH  ,4.0,4,1,STRONG,OK,4.0,3
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-30,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,2120,CO RO Rocky Mt Sour ,6.0,5,4,STRONG,OK,5.0,1
+2025-12-27,764,Monday,Safeway *SBT  #2918-West 10th,Greeley,50,4120,CO RO THIN RM SOUR  ,3.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-24,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-06,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,9450,CO RO GF SOURDOUGH,1.0,1,3,STRONG,OK,4.0,-2
+2026-02-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,9602,CO RO GF Super Seed,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-13,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2060,CO RO Honey Sweet,4.0,4,4,STRONG,OK,5.0,0
+2026-03-06,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2100,CO RO Multigrain Oat,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,2120,CO RO Rocky Mt Sour,1.0,1,6,STRONG,OK,5.0,-5
+2026-03-27,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,4120,CO RO THIN RM SOUR,1.0,1,1,STRONG,OK,4.0,0
+2026-03-24,764,Monday,Safeway *SBT #2666-Centerplac,Greeley,50,9531,GF BRIOCHE BURGER BZ,4.0,4,2,MODERATE,WATCH,4.0,2
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2040,CO RO Country Morn,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,9500,CO RO GF HOME ORIGI,2.0,2,2,STRONG,OK,4.0,0
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,9450,CO RO GF SOURDOUGH,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-24,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,2120,CO RO Rocky Mt Sour,4.0,4,7,STRONG,OK,5.0,-3
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,4120,CO RO THIN RM SOUR,2.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,764,Monday,Safeway *SBT #2918-West 10th,Greeley,50,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,9530,CO GF Briouche Loaf ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2160,CO RO 100% Bread WW ,3.0,3,4,STRONG,OK,5.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,9500,CO RO GF HOME ORIGI ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,9450,CO RO GF SOURDOUGH  ,6.0,4,3,STRONG,OK,4.0,1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2060,CO RO Honey Sweet   ,4.0,4,3,MODERATE,WATCH,5.0,1
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2100,CO RO Multigrain Oat,3.0,3,3,MODERATE,WATCH,5.0,0
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,2120,CO RO Rocky Mt Sour ,8.0,5,8,STRONG,OK,5.0,-3
+2025-12-31,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,4120,CO RO THIN RM SOUR  ,6.0,2,3,STRONG,OK,4.0,-1
+2025-12-24,764,Monday,Safeway *SBT  #1552-E. Harmony,Fort Collins,45,9531,GF BRIOCHE BURGER BZ,3.0,3,1,MODERATE,WATCH,4.0,2
+2025-12-29,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2160,CO RO 100% Bread WW ,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2352,CO RO Crckd Wht Sour,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-29,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,9500,CO RO GF HOME ORIGI ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,9450,CO RO GF SOURDOUGH  ,2.0,2,3,STRONG,OK,4.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,9602,CO RO GF Super Seed ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2060,CO RO Honey Sweet   ,2.0,2,3,MODERATE,WATCH,5.0,-1
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-29,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,2120,CO RO Rocky Mt Sour ,12.0,5,4,STRONG,OK,5.0,1
+2025-12-31,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,4120,CO RO THIN RM SOUR  ,2.0,1,4,STRONG,OK,4.0,-3
+2025-12-29,764,Monday,Safeway *SBT  #2913-W. Drake,Fort Collins,45,9531,GF BRIOCHE BURGER BZ,2.0,2,2,MODERATE,WATCH,4.0,0
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,9530,CO GF Briouche Loaf,4.0,4,5,STRONG,OK,4.0,-1
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2160,CO RO 100% Bread WW,4.0,4,4,STRONG,OK,5.0,0
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2352,CO RO Crckd Wht Sour,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,9500,CO RO GF HOME ORIGI,3.0,3,5,STRONG,OK,4.0,-2
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,9450,CO RO GF SOURDOUGH,5.0,4,5,STRONG,OK,4.0,-1
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,9602,CO RO GF Super Seed,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2060,CO RO Honey Sweet,4.0,4,4,STRONG,OK,5.0,0
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2100,CO RO Multigrain Oat,4.0,4,3,MODERATE,WATCH,5.0,1
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,2120,CO RO Rocky Mt Sour,10.0,5,12,STRONG,OK,5.0,-7
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,4120,CO RO THIN RM SOUR,6.0,2,5,STRONG,OK,4.0,-3
+2026-03-28,764,Monday,Safeway *SBT #1552-E. Harmony,Fort Collins,45,9531,GF BRIOCHE BURGER BZ,2.0,2,3,MODERATE,WATCH,4.0,-1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,9530,CO GF Briouche Loaf,3.0,3,6,STRONG,OK,4.0,-3
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2160,CO RO 100% Bread WW,2.0,2,3,STRONG,OK,5.0,-1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2040,CO RO Country Morn,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2352,CO RO Crckd Wht Sour,3.0,3,2,MODERATE,WATCH,5.0,1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,9500,CO RO GF HOME ORIGI,4.0,4,3,STRONG,OK,4.0,1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,9450,CO RO GF SOURDOUGH,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2060,CO RO Honey Sweet,3.0,3,3,STRONG,OK,5.0,0
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2100,CO RO Multigrain Oat,4.0,4,3,MODERATE,WATCH,5.0,1
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,2120,CO RO Rocky Mt Sour,9.0,5,8,STRONG,OK,5.0,-3
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,4120,CO RO THIN RM SOUR,5.0,2,4,STRONG,OK,4.0,-2
+2026-03-30,764,Monday,Safeway *SBT #2913-W. Drake,Fort Collins,45,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-23,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2160,CO RO 100% Bread WW ,4.0,4,4,STRONG,OK,5.0,0
+2026-03-23,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2040,CO RO Country Morn  ,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9500,CO RO GF HOME ORIGI ,2.0,2,2,STRONG,OK,4.0,0
+2026-03-26,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9450,CO RO GF SOURDOUGH,3.0,3,1,STRONG,OK,4.0,2
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9450,CO RO GF SOURDOUGH  ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-26,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2060,CO RO Honey Sweet,3.0,3,3,STRONG,OK,5.0,0
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2060,CO RO Honey Sweet   ,1.0,1,4,STRONG,OK,5.0,-3
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2120,CO RO Rocky Mt Sour,3.0,3,6,STRONG,OK,5.0,-3
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,2120,CO RO Rocky Mt Sour ,5.0,5,8,STRONG,OK,5.0,-3
+2026-03-26,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,4120,CO RO THIN RM SOUR,1.0,1,1,STRONG,OK,4.0,0
+2025-12-29,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,4120,CO RO THIN RM SOUR  ,1.0,1,3,STRONG,OK,4.0,-2
+2026-02-23,764,Monday,Safeway *SBT on`s #876-Fort Co,Fort Collins,45,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,9530,CO GF Briouche Loaf,4.0,4,3,STRONG,OK,4.0,1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2160,CO RO 100% Bread WW,3.0,3,2,STRONG,OK,5.0,1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2040,CO RO Country Morn,3.0,3,1,MODERATE,WATCH,5.0,2
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2352,CO RO Crckd Wht Sour,3.0,3,1,MODERATE,WATCH,5.0,2
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,9500,CO RO GF HOME ORIGI,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,9450,CO RO GF SOURDOUGH,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,2120,CO RO Rocky Mt Sour,8.0,5,5,STRONG,OK,5.0,0
+2026-03-03,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,4100,CO RO THIN 100% WHT,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,4120,CO RO THIN RM SOUR,3.0,1,3,STRONG,OK,4.0,-2
+2026-03-31,764,Monday,Safeway *SBT #1791-Windsor,Windsor,30,9531,GF BRIOCHE BURGER BZ,4.0,4,2,MODERATE,WATCH,4.0,2
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,2160,CO RO 100% Bread WW ,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-27,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,9500,CO RO GF HOME ORIGI ,3.0,3,3,STRONG,OK,4.0,0
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,9450,CO RO GF SOURDOUGH  ,3.0,3,3,STRONG,OK,4.0,0
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,2120,CO RO Rocky Mt Sour ,4.0,4,4,STRONG,OK,5.0,0
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,4120,CO RO THIN RM SOUR  ,3.0,1,3,STRONG,OK,4.0,-2
+2025-12-30,764,Wednesday,Safeway *SBT  #1791-Windsor,Windsor,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,2160,CO RO 100% Bread WW ,3.0,3,2,STRONG,OK,5.0,1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,2040,CO RO Country Morn  ,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet   ,1.0,1,4,MODERATE,WATCH,5.0,-3
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,7.0,5,10,STRONG,OK,5.0,-5
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,4110,CO RO THIN HON WHT  ,3.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,5.0,1,6,STRONG,OK,4.0,-5
+2025-12-30,766,Monday,Safeway *SBT  #2839-CO Springs,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,9530,CO GF Briouche Loaf,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2352,CO RO Crckd Wht Sour,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,2120,CO RO Rocky Mt Sour,7.0,5,4,STRONG,OK,5.0,1
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,4110,CO RO THIN HON WHT,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,766,Monday,Safeway *SBT #2839-CO Springs,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9530,CO GF Briouche Loaf,3.0,3,2,STRONG,OK,4.0,1
+2025-12-27,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9530,CO GF Briouche Loaf ,3.0,3,0,STRONG,OK,4.0,3
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2025-12-30,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2160,CO RO 100% Bread WW ,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9450,CO RO GF SOURDOUGH,4.0,4,2,STRONG,OK,4.0,2
+2025-12-27,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9450,CO RO GF SOURDOUGH  ,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9602,CO RO GF Super Seed,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9602,CO RO GF Super Seed ,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2060,CO RO Honey Sweet,2.0,2,2,STRONG,OK,5.0,0
+2025-12-30,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2060,CO RO Honey Sweet   ,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2120,CO RO Rocky Mt Sour,8.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,2120,CO RO Rocky Mt Sour ,3.0,3,6,STRONG,OK,5.0,-3
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,4110,CO RO THIN HON WHT,1.0,1,3,MODERATE,WATCH,4.0,-2
+2025-12-30,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,4110,CO RO THIN HON WHT  ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,4120,CO RO THIN RM SOUR,4.0,1,6,STRONG,OK,4.0,-5
+2025-12-30,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,4120,CO RO THIN RM SOUR  ,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-31,766,Monday,Safeway *SBT ons #0803- Austin,COLORADO SPRINGS,70,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2025-12-27,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2160,CO RO 100% Bread WW ,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2040,CO RO Country Morn,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-27,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9450,CO RO GF SOURDOUGH  ,3.0,3,3,STRONG,OK,4.0,0
+2026-03-24,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9602,CO RO GF Super Seed,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-27,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-24,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2120,CO RO Rocky Mt Sour,7.0,5,4,STRONG,OK,5.0,1
+2025-12-27,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,2120,CO RO Rocky Mt Sour ,2.0,2,6,STRONG,OK,5.0,-4
+2026-03-17,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,4110,CO RO THIN HON WHT,3.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-24,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,4120,CO RO THIN RM SOUR,8.0,1,0,STRONG,OK,4.0,1
+2025-12-27,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,4120,CO RO THIN RM SOUR  ,2.0,1,5,STRONG,OK,4.0,-4
+2026-03-24,766,Monday,Safeway *SBT ons #0840-N.Union,Colorado Springs,70,9531,GF BRIOCHE BURGER BZ,1.0,1,0,MODERATE,WATCH,4.0,1
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,2160,CO RO 100% Bread WW ,1.0,1,1,STRONG,OK,5.0,0
+2025-12-29,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-29,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,9602,CO RO GF Super Seed ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-29,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,2060,CO RO Honey Sweet   ,1.0,1,2,STRONG,OK,5.0,-1
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,2120,CO RO Rocky Mt Sour ,5.0,5,4,STRONG,OK,5.0,1
+2025-12-29,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,4110,CO RO THIN HON WHT  ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,4120,CO RO THIN RM SOUR  ,2.0,1,5,STRONG,OK,4.0,-4
+2025-12-31,766,Monday,Safeway *SBT  #1877-S. Perry,Castle Rock,50,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2160,CO RO 100% Bread WW,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-26,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-26,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,9450,CO RO GF SOURDOUGH,3.0,3,4,STRONG,OK,4.0,-1
+2026-03-28,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,2120,CO RO Rocky Mt Sour,4.0,4,4,STRONG,OK,5.0,0
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,4110,CO RO THIN HON WHT,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,4120,CO RO THIN RM SOUR,4.0,1,6,STRONG,OK,4.0,-5
+2026-03-30,766,Monday,Safeway *SBT #1877-S. Perry,Castle Rock,50,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,9530,CO GF Briouche Loaf,1.0,1,0,STRONG,OK,4.0,1
+2026-03-28,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2160,CO RO 100% Bread WW,3.0,3,2,STRONG,OK,5.0,1
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2040,CO RO Country Morn,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-28,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-28,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,9602,CO RO GF Super Seed,1.0,1,0,STRONG,OK,4.0,1
+2026-03-28,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2060,CO RO Honey Sweet,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,2120,CO RO Rocky Mt Sour,2.0,2,0,STRONG,OK,5.0,2
+2026-03-28,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,4110,CO RO THIN HON WHT,2.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-30,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,4120,CO RO THIN RM SOUR,2.0,1,0,STRONG,OK,4.0,1
+2026-03-21,766,Wednesday,Safeway *SBT #1440-Highway 10,Monument,30,9531,GF BRIOCHE BURGER BZ,1.0,1,3,MODERATE,WATCH,4.0,-2
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-24,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-10,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2040,CO RO Country Morn,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,9450,CO RO GF SOURDOUGH,3.0,3,2,STRONG,OK,4.0,1
+2026-03-24,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2060,CO RO Honey Sweet,1.0,1,2,STRONG,OK,5.0,-1
+2026-03-20,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,2120,CO RO Rocky Mt Sour,5.0,5,4,STRONG,OK,5.0,1
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,4110,CO RO THIN HON WHT,2.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,4120,CO RO THIN RM SOUR,3.0,1,4,STRONG,OK,4.0,-3
+2026-03-27,766,Wednesday,Safeway *SBT #1644-Falcon,Falcon,30,9531,GF BRIOCHE BURGER BZ,3.0,3,2,MODERATE,WATCH,4.0,1
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-29,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,9450,CO RO GF SOURDOUGH  ,2.0,2,2,STRONG,OK,4.0,0
+2025-12-29,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,9602,CO RO GF Super Seed ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,2120,CO RO Rocky Mt Sour ,2.0,2,4,STRONG,OK,5.0,-2
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,4110,CO RO THIN HON WHT  ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,4120,CO RO THIN RM SOUR  ,4.0,1,3,STRONG,OK,4.0,-2
+2025-12-31,766,Friday,Safeway *SBT  #1440-Highway 10,Monument,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,9450,CO RO GF SOURDOUGH  ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,9602,CO RO GF Super Seed ,2.0,2,1,MODERATE,WATCH,4.0,1
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,2120,CO RO Rocky Mt Sour ,7.0,5,4,STRONG,OK,5.0,1
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,4110,CO RO THIN HON WHT  ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,4120,CO RO THIN RM SOUR  ,4.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,766,Friday,Safeway *SBT  #1644-Falcon,Falcon,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,9530,CO GF Briouche Loaf ,3.0,3,2,STRONG,OK,4.0,1
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,2160,CO RO 100% Bread WW ,4.0,4,3,STRONG,OK,5.0,1
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,9500,CO RO GF HOME ORIGI ,5.0,4,4,STRONG,OK,4.0,0
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,9450,CO RO GF SOURDOUGH  ,5.0,4,4,STRONG,OK,4.0,0
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,9602,CO RO GF Super Seed ,4.0,4,3,STRONG,OK,4.0,1
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,2060,CO RO Honey Sweet   ,3.0,3,3,MODERATE,WATCH,5.0,0
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,2120,CO RO Rocky Mt Sour ,13.0,5,10,STRONG,OK,5.0,-5
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,4120,CO RO THIN RM SOUR  ,5.0,2,6,STRONG,OK,4.0,-4
+2025-12-30,767,Monday,Safeway *SBT  #914-W. Eisenhow,Loveland,35,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2160,CO RO 100% Bread WW,2.0,2,2,STRONG,OK,5.0,0
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2040,CO RO Country Morn,4.0,4,2,MODERATE,WATCH,5.0,2
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,9500,CO RO GF HOME ORIGI,3.0,3,1,STRONG,OK,4.0,2
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,9450,CO RO GF SOURDOUGH,2.0,2,2,STRONG,OK,4.0,0
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,9602,CO RO GF Super Seed,4.0,4,1,STRONG,OK,4.0,3
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2060,CO RO Honey Sweet,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2100,CO RO Multigrain Oat,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,2120,CO RO Rocky Mt Sour,5.0,5,4,STRONG,OK,5.0,1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,4120,CO RO THIN RM SOUR,2.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Monday,Safeway *SBT #914-W. Eisenhow,Loveland,35,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-27,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9530,CO GF Briouche Loaf ,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2160,CO RO 100% Bread WW,1.0,1,0,STRONG,OK,5.0,1
+2026-03-27,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-24,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9500,CO RO GF HOME ORIGI,1.0,1,0,STRONG,OK,4.0,1
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9500,CO RO GF HOME ORIGI ,3.0,3,2,STRONG,OK,4.0,1
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9450,CO RO GF SOURDOUGH  ,4.0,4,3,STRONG,OK,4.0,1
+2026-03-17,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9602,CO RO GF Super Seed,1.0,1,1,STRONG,OK,4.0,0
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2060,CO RO Honey Sweet,2.0,2,1,STRONG,OK,5.0,1
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2060,CO RO Honey Sweet   ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-27,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2120,CO RO Rocky Mt Sour,4.0,4,5,STRONG,OK,5.0,-1
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,2120,CO RO Rocky Mt Sour ,1.0,1,3,STRONG,OK,5.0,-2
+2026-03-31,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,4120,CO RO THIN RM SOUR,1.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,4120,CO RO THIN RM SOUR  ,1.0,1,3,STRONG,OK,4.0,-2
+2026-03-27,767,Monday,Safeway *SBT on`s #0804 W.Eise,Loveland,35,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-28,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,9530,CO GF Briouche Loaf,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-02-19,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2040,CO RO Country Morn,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-26,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2352,CO RO Crckd Wht Sour,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-23,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,9500,CO RO GF HOME ORIGI,1.0,1,1,STRONG,OK,4.0,0
+2026-03-30,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,9450,CO RO GF SOURDOUGH,1.0,1,1,STRONG,OK,4.0,0
+2026-03-09,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,9602,CO RO GF Super Seed,1.0,1,1,MODERATE,WATCH,4.0,0
+2026-03-30,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2060,CO RO Honey Sweet,1.0,1,1,STRONG,OK,5.0,0
+2026-03-28,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2026-03-30,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,2120,CO RO Rocky Mt Sour,4.0,4,4,STRONG,OK,5.0,0
+2026-03-30,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,4120,CO RO THIN RM SOUR,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-28,767,Wednesday,Safeway *SBT #1828- Firestone,Firestone,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-31,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,9530,CO GF Briouche Loaf ,1.0,1,1,STRONG,OK,4.0,0
+2025-12-31,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,2160,CO RO 100% Bread WW ,1.0,1,0,STRONG,OK,5.0,1
+2025-12-29,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,2040,CO RO Country Morn  ,1.0,1,1,MODERATE,WATCH,5.0,0
+2025-12-31,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,9500,CO RO GF HOME ORIGI ,1.0,1,3,STRONG,OK,4.0,-2
+2025-12-29,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,9450,CO RO GF SOURDOUGH  ,4.0,4,2,STRONG,OK,4.0,2
+2025-12-31,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,2120,CO RO Rocky Mt Sour ,2.0,2,4,STRONG,OK,5.0,-2
+2025-12-29,767,Friday,Safeway *SBT  #1828- Firestone,Firestone,30,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,9530,CO GF Briouche Loaf ,4.0,4,3,STRONG,OK,4.0,1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,2160,CO RO 100% Bread WW ,1.0,1,3,STRONG,OK,5.0,-2
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,9500,CO RO GF HOME ORIGI ,1.0,1,2,STRONG,OK,4.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,9450,CO RO GF SOURDOUGH  ,4.0,4,3,STRONG,OK,4.0,1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,9602,CO RO GF Super Seed ,4.0,4,2,MODERATE,WATCH,4.0,2
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,2060,CO RO Honey Sweet   ,4.0,4,3,STRONG,OK,5.0,1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,2100,CO RO Multigrain Oat,2.0,2,2,MODERATE,WATCH,5.0,0
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,2120,CO RO Rocky Mt Sour ,11.0,5,6,STRONG,OK,5.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,4120,CO RO THIN RM SOUR  ,3.0,1,4,STRONG,OK,4.0,-3
+2025-12-30,767,Friday,Safeway *SBT  #1116-Ken Pratt,Longmont,15,9531,GF BRIOCHE BURGER BZ,1.0,1,1,MODERATE,WATCH,4.0,0
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,9530,CO GF Briouche Loaf ,4.0,4,3,STRONG,OK,4.0,1
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,2160,CO RO 100% Bread WW ,3.0,3,3,STRONG,OK,5.0,0
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,2040,CO RO Country Morn  ,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,9500,CO RO GF HOME ORIGI ,3.0,3,3,STRONG,OK,4.0,0
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,9450,CO RO GF SOURDOUGH  ,3.0,3,4,STRONG,OK,4.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,9602,CO RO GF Super Seed ,3.0,3,3,MODERATE,WATCH,4.0,0
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,2060,CO RO Honey Sweet   ,4.0,4,3,MODERATE,WATCH,5.0,1
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,2100,CO RO Multigrain Oat,1.0,1,2,MODERATE,WATCH,5.0,-1
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,2120,CO RO Rocky Mt Sour ,11.0,5,8,STRONG,OK,5.0,-3
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,4120,CO RO THIN RM SOUR  ,7.0,4,6,STRONG,OK,4.0,-2
+2025-12-30,767,Friday,Safeway *SBT  #2910-Hover,Longmont,15,9531,GF BRIOCHE BURGER BZ,1.0,1,2,MODERATE,WATCH,4.0,-1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,9530,CO GF Briouche Loaf,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2160,CO RO 100% Bread WW,1.0,1,1,STRONG,OK,5.0,0
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2040,CO RO Country Morn,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-24,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2352,CO RO Crckd Wht Sour,1.0,1,2,MODERATE,WATCH,5.0,-1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,9500,CO RO GF HOME ORIGI,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,9450,CO RO GF SOURDOUGH,1.0,1,2,STRONG,OK,4.0,-1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,9602,CO RO GF Super Seed,5.0,4,2,STRONG,OK,4.0,2
+2026-03-28,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2060,CO RO Honey Sweet,1.0,1,0,MODERATE,WATCH,5.0,1
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2100,CO RO Multigrain Oat,4.0,4,1,MODERATE,WATCH,5.0,3
+2026-03-31,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,2120,CO RO Rocky Mt Sour,5.0,5,4,STRONG,OK,5.0,1
+2026-03-28,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,4120,CO RO THIN RM SOUR,1.0,1,4,STRONG,OK,4.0,-3
+2026-03-24,767,Friday,Safeway *SBT #1116-Ken Pratt,Longmont,15,9531,GF BRIOCHE BURGER BZ,4.0,4,2,MODERATE,WATCH,4.0,2
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9530,CO GF Briouche Loaf,1.0,1,0,STRONG,OK,4.0,1
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2160,CO RO 100% Bread WW,2.0,2,3,STRONG,OK,5.0,-1
+2026-03-27,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2040,CO RO Country Morn,1.0,1,3,MODERATE,WATCH,5.0,-2
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2352,CO RO Crckd Wht Sour,2.0,2,1,MODERATE,WATCH,5.0,1
+2026-03-27,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9502,CO RO GF HOME MULTI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9500,CO RO GF HOME ORIGI,2.0,2,1,STRONG,OK,4.0,1
+2026-03-24,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9450,CO RO GF SOURDOUGH,4.0,4,3,STRONG,OK,4.0,1
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9602,CO RO GF Super Seed,2.0,2,1,STRONG,OK,4.0,1
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2060,CO RO Honey Sweet,4.0,4,4,STRONG,OK,5.0,0
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2100,CO RO Multigrain Oat,1.0,1,1,MODERATE,WATCH,5.0,0
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,2120,CO RO Rocky Mt Sour,2.0,2,6,STRONG,OK,5.0,-4
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,4120,CO RO THIN RM SOUR,4.0,1,5,STRONG,OK,4.0,-4
+2026-03-31,767,Friday,Safeway *SBT #2910-Hover,Longmont,15,9531,GF BRIOCHE BURGER BZ,2.0,2,1,MODERATE,WATCH,4.0,1
