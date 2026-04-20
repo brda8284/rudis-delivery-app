@@ -661,15 +661,23 @@ function filterRoute() {
 
 // ── RENDER STORES ────────────────────────────────────────────
 function renderStores() {
-  const routeKey = allData[0].hasOwnProperty('Route') ? 'Route' : 'route';
-  const storeKey = allData[0].hasOwnProperty('Store') ? 'Store' : 'store';
-  const cityKey = allData[0].hasOwnProperty('City') ? 'City' : 'SHIPCITY';
-  const productKey = allData[0].hasOwnProperty('Product') ? 'Product' : 'descrip';
-  const qtyKey = allData[0].hasOwnProperty('Recommended Qty') ? 'Recommended Qty' : 'optimal_units';
-  const demandKey = allData[0].hasOwnProperty('Predicted Demand') ? 'Predicted Demand' : 'pred_demand';
-  const confidenceKey = allData[0].hasOwnProperty('Confidence') ? 'Confidence' : null;
-  const actionKey = allData[0].hasOwnProperty('Action') ? 'Action' : null;
-  const returnRateKey = allData[0].hasOwnProperty('Return Rate') ? 'Return Rate' : null;
+  const firstRow = allData[0];
+  const routeKey      = 'Route'      in firstRow ? 'Route'          : 'route';
+  const storeKey      = 'Store'      in firstRow ? 'Store'          : 'store';
+  const cityKey       = 'City'       in firstRow ? 'City'           : ('SHIPCITY' in firstRow ? 'SHIPCITY' : '');
+  const productKey    = 'Product'    in firstRow ? 'Product'        : ('descrip' in firstRow ? 'descrip' : 'product');
+  // Support both CSV schemas: new (RecommendedDrop) and old (Recommended Qty)
+  const qtyKey        = 'RecommendedDrop' in firstRow ? 'RecommendedDrop'
+                      : ('Recommended Qty' in firstRow ? 'Recommended Qty' : 'optimal_units');
+  const demandKey     = 'PredictedDemand' in firstRow ? 'PredictedDemand'
+                      : ('Predicted Demand' in firstRow ? 'Predicted Demand' : 'pred_demand');
+  const skuKey        = 'ItemCode'   in firstRow ? 'ItemCode'       : ('Item' in firstRow ? 'Item' : null);
+  const skuTierKey    = 'SKUTier'    in firstRow ? 'SKUTier'        : null;
+  const riskKey       = 'RiskFlag'   in firstRow ? 'RiskFlag'       : null;
+  const confidenceKey = 'Confidence' in firstRow ? 'Confidence'     : null;
+  const actionKey     = 'ChangeFromCurrent' in firstRow ? 'ChangeFromCurrent'
+                      : ('Action' in firstRow ? 'Action' : null);
+  const returnRateKey = 'Return Rate' in firstRow ? 'Return Rate'   : null;
 
   const searchTerm = document.getElementById('search-box').value.toLowerCase();
   
@@ -707,41 +715,59 @@ function renderStores() {
   list.innerHTML = Object.entries(stores).map(([storeId, data]) => {
     const storeTotal = data.products.reduce((sum, r) => sum + (parseFloat(r[qtyKey]) || 0), 0);
     const city = data.info[cityKey] || '';
+    // Sanitize the store name into a valid DOM id (replace non-alphanumeric with underscores)
+    const safeId = 'store-' + String(storeId).replace(/[^a-zA-Z0-9]/g, '_');
 
     const productRows = data.products.map(r => {
       const qty = Math.round(parseFloat(r[qtyKey]) || 0);
-      const productName = r[productKey] || r.product || r.descrip || 'Unknown Product';
-      const upc = r.product || r.Item || '';
+      const productName = r[productKey] || 'Unknown Product';
+      const skuDisplay = skuKey ? r[skuKey] : '';
       
-      // Confidence
+      // Confidence: prefer explicit Confidence col, then SKUTier, then return rate
       let confClass = 'confidence-high';
       let confLabel = 'High';
       if (confidenceKey && r[confidenceKey]) {
         const c = r[confidenceKey].toLowerCase();
         if (c.includes('low')) { confClass = 'confidence-low'; confLabel = 'Low'; }
         else if (c.includes('moderate') || c.includes('medium')) { confClass = 'confidence-medium'; confLabel = 'Med'; }
+      } else if (skuTierKey && r[skuTierKey]) {
+        const t = r[skuTierKey].toLowerCase();
+        if (t === 'weak') { confClass = 'confidence-low'; confLabel = 'Low'; }
+        else if (t === 'moderate') { confClass = 'confidence-medium'; confLabel = 'Med'; }
       } else if (returnRateKey && r[returnRateKey]) {
         const rate = parseFloat(r[returnRateKey]);
         if (rate > 0.30) { confClass = 'confidence-low'; confLabel = 'Low'; }
         else if (rate > 0.20) { confClass = 'confidence-medium'; confLabel = 'Med'; }
       }
 
-      // Action
+      // Action: support numeric ChangeFromCurrent or text Action column
       let actionClass = 'action-maintain';
-      if (actionKey && r[actionKey]) {
-        const a = r[actionKey].toLowerCase();
-        if (a.includes('reduce')) actionClass = 'action-reduce';
-        else if (a.includes('increase')) actionClass = 'action-increase';
+      if (actionKey && r[actionKey] !== undefined && r[actionKey] !== '') {
+        const raw = r[actionKey];
+        const numeric = parseFloat(raw);
+        if (!isNaN(numeric)) {
+          if (numeric < 0) actionClass = 'action-reduce';
+          else if (numeric > 0) actionClass = 'action-increase';
+        } else {
+          const a = String(raw).toLowerCase();
+          if (a.includes('reduce') || a.includes('decrease')) actionClass = 'action-reduce';
+          else if (a.includes('increase')) actionClass = 'action-increase';
+        }
       }
+
+      // Risk flag badge (new schema only)
+      const riskBadge = riskKey && r[riskKey] && r[riskKey] !== 'OK'
+        ? `<span class="confidence-badge confidence-medium" style="margin-right:4px">${r[riskKey]}</span>`
+        : '';
 
       return `
         <div class="product-row">
           <div class="product-left">
             <div class="product-name">${productName}</div>
-            ${upc && upc !== productName ? `<div class="product-upc">${upc}</div>` : ''}
+            ${skuDisplay ? `<div class="product-upc">SKU ${skuDisplay}</div>` : ''}
           </div>
           <div class="product-right">
-            <span class="confidence-badge ${confClass}">${confLabel}</span>
+            ${riskBadge}<span class="confidence-badge ${confClass}">${confLabel}</span>
             <div class="qty-bubble">${qty}</div>
             <div class="action-dot ${actionClass}"></div>
           </div>
@@ -749,12 +775,12 @@ function renderStores() {
     }).join('');
 
     return `
-      <div class="store-card" id="store-${storeId}">
-        <div class="store-header" onclick="toggleStore('store-${storeId}')">
+      <div class="store-card" id="${safeId}">
+        <div class="store-header" onclick="toggleStore('${safeId}')">
           <div class="store-header-left">
             <div class="store-number">#${storeId}</div>
             <div class="store-info">
-              <h3>Store ${storeId}</h3>
+              <h3>${storeId}</h3>
               ${city ? `<p>${city}</p>` : ''}
             </div>
           </div>
